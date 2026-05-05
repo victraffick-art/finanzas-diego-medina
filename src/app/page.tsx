@@ -87,12 +87,12 @@ export default function LandingPage() {
       </section>
 
       {/* Quote Section */}
-      <section className="bg-white py-20 md:py-24 px-6">
+      <section className="bg-white py-12 md:py-16 px-6 relative z-30">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-[20px] md:text-[32px] lg:text-[36px] font-medium text-[#13253F] leading-tight tracking-tight opacity-90">
+          <p className="text-[18px] md:text-[24px] lg:text-[28px] font-medium text-[#13253F] leading-tight tracking-normal">
             Si quieres hacer crecer tu vida, tus relaciones, tu carrera <br className="hidden md:block" />
             o tu negocio, primero debes crecer tú mismo.
-          </h2>
+          </p>
         </div>
       </section>
 
