@@ -103,11 +103,11 @@ export default function LandingPage() {
             ¿Estás preparado para el siguiente nivel?
           </p>
           
-          <div className="flex flex-col items-center mb-10">
-            <h2 className="text-[#00AEEF] text-[56px] md:text-[86px] lg:text-[110px] font-black leading-none tracking-tighter drop-shadow-lg uppercase">
+          <div className="flex flex-col items-center mb-12 gap-2 md:gap-4 lg:gap-6">
+            <h2 className="text-[#00AEEF] text-[60px] md:text-[100px] lg:text-[150px] font-black leading-none tracking-tighter drop-shadow-2xl uppercase">
               MENTALIDAD
             </h2>
-            <div className="text-[#F7C34D] text-[20px] md:text-[36px] lg:text-[46px] font-light tracking-[0.3em] md:tracking-[0.5em] lg:tracking-[0.65em] leading-none uppercase -mt-2 md:-mt-4 lg:-mt-6 ml-4">
+            <div className="text-[#F7C34D] text-[22px] md:text-[42px] lg:text-[58px] font-light tracking-[0.35em] md:tracking-[0.55em] lg:tracking-[0.7em] leading-none uppercase ml-4">
               ESTRATÉGICA
             </div>
           </div>
