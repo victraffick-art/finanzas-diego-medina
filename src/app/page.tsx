@@ -53,13 +53,13 @@ export default function LandingPage() {
 
         <div className="container mx-auto px-6 md:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[85vh]">
           
-          {/* Left Side: Character Image (Diego) - Enlarged */}
+          {/* Left Side: Character Image (Diego) - Slightly smaller scale */}
           <div className="lg:col-span-5 h-full flex items-end justify-center lg:justify-start relative">
-            <div className="relative w-full max-w-[650px] h-[750px] lg:h-[95vh] flex items-end -mb-8 scale-110 origin-bottom">
+            <div className="relative w-full max-w-[600px] h-[750px] lg:h-[90vh] flex items-end -mb-4 scale-100 origin-bottom">
               <img 
                 src="/diego-hero.png" 
                 alt="Diego Medina" 
-                className="w-full h-full object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-20"
+                className="w-full h-full object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.12)] z-20"
               />
             </div>
           </div>
@@ -86,8 +86,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Quote Section */}
-      <section className="bg-white py-12 md:py-16 px-6 relative z-30">
+      {/* Quote Section - Minimal Padding */}
+      <section className="bg-white py-8 md:py-10 px-6 relative z-30">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-[18px] md:text-[24px] lg:text-[28px] font-medium text-[#13253F] leading-tight tracking-normal">
             Si quieres hacer crecer tu vida, tus relaciones, tu carrera <br className="hidden md:block" />
