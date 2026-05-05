@@ -1,116 +1,44 @@
-"use client";
+import Link from "next/link";
 
-import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabaseClient";
-import Auth from "@/components/Auth";
-import FinancialSummary from "@/components/FinancialSummary";
-import TransactionForm from "@/components/TransactionForm";
-import TransactionList from "@/components/TransactionList";
-import { Transaction } from "@/types";
-import { LogOut, Activity } from "lucide-react";
-
-export default function Home() {
-  const [session, setSession] = useState<any>(null);
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-      if (session) fetchTransactions();
-      else setLoading(false);
-    });
-
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session);
-      if (session) fetchTransactions();
-    });
-
-    return () => subscription.unsubscribe();
-  }, []);
-
-  const fetchTransactions = async () => {
-    setLoading(true);
-    const { data, error } = await supabase
-      .from("transactions")
-      .select("*")
-      .order("date", { ascending: false })
-      .order("created_at", { ascending: false });
-
-    if (!error && data) {
-      setTransactions(data as Transaction[]);
-    }
-    setLoading(false);
-  };
-
-  const handleSignOut = async () => {
-    await supabase.auth.signOut();
-  };
-
-  if (loading && !session) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-zinc-950">
-        <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-      </div>
-    );
-  }
-
-  if (!session) {
-    return (
-      <main className="min-h-screen bg-zinc-950 flex flex-col items-center justify-center p-4">
-        <div className="mb-8 text-center">
-          <div className="inline-flex items-center justify-center p-3 bg-blue-500/10 rounded-2xl mb-4">
-            <Activity className="w-10 h-10 text-blue-500" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            Proyecto Finanzas
-          </h1>
-          <p className="text-zinc-400 mt-2 text-lg">Controla tu dinero inteligentemente</p>
-        </div>
-        <div className="w-full max-w-md">
-          <Auth onAuthSuccess={fetchTransactions} />
-        </div>
-      </main>
-    );
-  }
-
+export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-zinc-950 pb-20">
-      {/* Header */}
-      <header className="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-10">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <Activity className="w-6 h-6 text-blue-500" />
-            <h1 className="text-xl font-bold text-white tracking-tight">Finanzas</h1>
+    <main className="min-h-screen bg-white">
+      {/* Top Blue Banner (Header) */}
+      <header className="bg-[#13253F] text-white py-4 px-6 md:px-16 flex justify-between items-center shadow-lg">
+        {/* Logo Section */}
+        <div className="flex flex-col">
+          <div className="flex items-baseline text-2xl md:text-3xl tracking-tight">
+            <span className="font-bold text-[#FFFFFF]">Dieg</span><span className="relative inline-block font-bold text-[#FFFFFF]">o<span className="absolute left-[50%] top-[55%] -translate-x-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-[#00AEEF] rounded-full"></span></span><span className="font-extralight ml-2 text-[#FFFFFF]">Medina</span>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="text-sm text-zinc-400 hidden md:block">
-              {session.user.email}
-            </span>
-            <button
-              onClick={handleSignOut}
-              className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors bg-zinc-800 hover:bg-zinc-700 px-3 py-2 rounded-lg"
-            >
-              <LogOut className="w-4 h-4" />
-              <span className="hidden md:inline">Salir</span>
-            </button>
-          </div>
+          <span className="text-[9px] md:text-[11px] uppercase tracking-[0.15em] font-medium text-gray-300 -mt-1 leading-tight">
+            Liderazgo para el alto desempeño
+          </span>
         </div>
+
+        {/* Navigation Menu */}
+        <nav className="hidden lg:flex items-center gap-10">
+          {["SOBRE MÍ", "EVENTO", "WORKBOOK", "RECURSOS"].map((item) => (
+            <Link
+              key={item}
+              href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")}`}
+              className="text-[13px] font-bold tracking-widest hover:text-[#00AEEF] transition-colors"
+            >
+              {item}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Mobile Menu Button (Placeholder) */}
+        <button className="lg:hidden p-2">
+          <div className="w-6 h-0.5 bg-white mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-white mb-1.5"></div>
+          <div className="w-6 h-0.5 bg-white"></div>
+        </button>
       </header>
 
-      <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
-        <FinancialSummary transactions={transactions} />
-        
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1">
-            <TransactionForm onAdd={fetchTransactions} />
-          </div>
-          <div className="lg:col-span-2">
-            <TransactionList transactions={transactions} />
-          </div>
-        </div>
+      {/* Hero Section Placeholder (to be updated later) */}
+      <div className="w-full h-[600px] bg-gray-100 flex items-center justify-center text-gray-400">
+        <p>Próxima sección: Hero con imagen de Diego Medina</p>
       </div>
     </main>
   );
