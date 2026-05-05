@@ -36,10 +36,57 @@ export default function LandingPage() {
         </button>
       </header>
 
-      {/* Hero Section Placeholder (to be updated later) */}
-      <div className="w-full h-[600px] bg-gray-100 flex items-center justify-center text-gray-400">
-        <p>Próxima sección: Hero con imagen de Diego Medina</p>
-      </div>
+      {/* Hero Section */}
+      <section className="relative w-full min-h-[700px] flex items-center overflow-hidden">
+        {/* Background Image with Blur */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
+          style={{ 
+            backgroundImage: "url('/blurred-bg.png')",
+            filter: "brightness(1.05)"
+          }}
+        >
+          {/* Subtle overlay to soften the background */}
+          <div className="absolute inset-0 bg-white/20"></div>
+        </div>
+
+        <div className="container mx-auto px-6 md:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[700px]">
+          
+          {/* Left Side: Character Image (Diego) */}
+          <div className="lg:col-span-5 h-full flex items-end justify-center lg:justify-start relative">
+            <div className="relative w-full max-w-[550px] h-[600px] lg:h-[750px] flex items-end">
+              <img 
+                src="/diego-hero.png" 
+                alt="Diego Medina" 
+                className="w-full h-full object-contain object-bottom drop-shadow-2xl z-20"
+              />
+            </div>
+          </div>
+
+          {/* Right Side: Text Content */}
+          <div className="lg:col-span-7 py-12 lg:py-0 flex flex-col justify-center">
+            <div className="max-w-2xl">
+              <h1 className="text-[40px] md:text-[56px] lg:text-[64px] font-bold text-[#13253F] leading-[1.1] tracking-tight mb-8">
+                Transforma tu liderazgo <br className="hidden md:block" />
+                y alcanza resultados <br className="hidden md:block" />
+                exponenciales
+              </h1>
+              
+              <div className="relative inline-block mt-4">
+                {/* Yellow Highlight Bar */}
+                <div className="absolute inset-y-0 -left-6 -right-10 bg-gradient-to-r from-[#F7C34D]/60 via-[#F7C34D]/40 to-transparent z-0 transform -skew-x-12"></div>
+                
+                <p className="relative z-10 text-[18px] md:text-[22px] text-[#13253F] font-medium py-2 leading-relaxed">
+                  Te ayudo a desarrollar un <span className="font-bold underline decoration-[#13253F]/20 underline-offset-4">liderazgo estratégico</span> que acelere tus resultados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Next Section Placeholder */}
+      <div className="w-full h-[300px] bg-white"></div>
     </main>
   );
 }
