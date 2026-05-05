@@ -37,42 +37,43 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[700px] flex items-center overflow-hidden">
-        {/* Background Image with Increased Blur */}
+      <section className="relative w-full min-h-[85vh] flex items-center overflow-hidden">
+        {/* Background Image with Fixed Attachment (Parallax effect) */}
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-all duration-700 scale-110"
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed transition-all duration-700"
           style={{ 
             backgroundImage: "url('/blurred-bg.png')",
-            filter: "blur(15px) brightness(1.1)"
+            filter: "blur(15px) brightness(1.1)",
+            backgroundAttachment: "fixed"
           }}
         >
           {/* Soft white overlay for maximum text contrast */}
           <div className="absolute inset-0 bg-white/50"></div>
         </div>
 
-        <div className="container mx-auto px-6 md:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[700px]">
+        <div className="container mx-auto px-6 md:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[85vh]">
           
-          {/* Left Side: Character Image (Diego) */}
+          {/* Left Side: Character Image (Diego) - Enlarged */}
           <div className="lg:col-span-5 h-full flex items-end justify-center lg:justify-start relative">
-            <div className="relative w-full max-w-[550px] h-[600px] lg:h-[780px] flex items-end -mb-4">
+            <div className="relative w-full max-w-[650px] h-[750px] lg:h-[95vh] flex items-end -mb-8 scale-110 origin-bottom">
               <img 
                 src="/diego-hero.png" 
                 alt="Diego Medina" 
-                className="w-full h-full object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.2)] z-20"
+                className="w-full h-full object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-20"
               />
             </div>
           </div>
 
           {/* Right Side: Text Content */}
-          <div className="lg:col-span-7 py-12 lg:py-0 flex flex-col justify-center">
-            <div className="max-w-2xl">
-              <h1 className="text-[40px] md:text-[56px] lg:text-[68px] font-bold text-[#13253F] leading-[1.05] tracking-tight mb-10">
-                Transforma tu liderazgo <br className="hidden md:block" />
-                y alcanza resultados <br className="hidden md:block" />
-                exponenciales
+          <div className="lg:col-span-7 py-12 lg:py-0 flex flex-col justify-center relative z-30">
+            <div className="max-w-3xl">
+              <h1 className="text-[#13253F] leading-[1.05] tracking-tight mb-12">
+                <span className="block font-extrabold text-[40px] md:text-[56px] lg:text-[76px]">Transforma tu liderazgo</span>
+                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">y alcanza resultados</span>
+                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">exponenciales</span>
               </h1>
               
-              <div className="relative inline-block mt-4">
+              <div className="relative inline-block">
                 {/* Yellow Highlight Bar - More vibrant and precise */}
                 <div className="absolute inset-y-0 -left-6 -right-12 bg-gradient-to-r from-[#F7C34D]/70 via-[#F7C34D]/50 to-transparent z-0 transform -skew-x-12 rounded-l-md"></div>
                 
