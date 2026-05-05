@@ -96,8 +96,31 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Mentalidad Estratégica Section */}
+      <section className="bg-[#13253F] py-24 md:py-32 px-6 text-center">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-white text-[18px] md:text-[22px] font-medium mb-8 tracking-tight">
+            ¿Estás preparado para el siguiente nivel?
+          </p>
+          
+          <div className="flex flex-col items-center mb-10">
+            <h2 className="text-[#00AEEF] text-[56px] md:text-[86px] lg:text-[110px] font-black leading-none tracking-tighter drop-shadow-lg uppercase">
+              MENTALIDAD
+            </h2>
+            <div className="text-[#F7C34D] text-[20px] md:text-[36px] lg:text-[46px] font-light tracking-[0.3em] md:tracking-[0.5em] lg:tracking-[0.65em] leading-none uppercase -mt-2 md:-mt-4 lg:-mt-6 ml-4">
+              ESTRATÉGICA
+            </div>
+          </div>
+          
+          <p className="text-white text-[16px] md:text-[20px] lg:text-[22px] font-normal max-w-3xl mx-auto leading-relaxed opacity-90">
+            Transforma tu liderazgo y conviértete en el estratega que <br className="hidden md:block" />
+            impulsa el crecimiento y acelera los resultados.
+          </p>
+        </div>
+      </section>
+
       {/* Next Section Placeholder */}
-      <div className="w-full h-[300px] bg-gray-50"></div>
+      <div className="w-full h-[300px] bg-white"></div>
     </main>
   );
 }
