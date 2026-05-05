@@ -38,27 +38,27 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative w-full min-h-[700px] flex items-center overflow-hidden">
-        {/* Background Image with Blur */}
+        {/* Background Image with Increased Blur */}
         <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-all duration-700 scale-110"
           style={{ 
             backgroundImage: "url('/blurred-bg.png')",
-            filter: "brightness(1.05)"
+            filter: "blur(15px) brightness(1.1)"
           }}
         >
-          {/* Subtle overlay to soften the background */}
-          <div className="absolute inset-0 bg-white/20"></div>
+          {/* Soft white overlay for maximum text contrast */}
+          <div className="absolute inset-0 bg-white/50"></div>
         </div>
 
         <div className="container mx-auto px-6 md:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[700px]">
           
           {/* Left Side: Character Image (Diego) */}
           <div className="lg:col-span-5 h-full flex items-end justify-center lg:justify-start relative">
-            <div className="relative w-full max-w-[550px] h-[600px] lg:h-[750px] flex items-end">
+            <div className="relative w-full max-w-[550px] h-[600px] lg:h-[780px] flex items-end -mb-4">
               <img 
                 src="/diego-hero.png" 
                 alt="Diego Medina" 
-                className="w-full h-full object-contain object-bottom drop-shadow-2xl z-20"
+                className="w-full h-full object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.2)] z-20"
               />
             </div>
           </div>
@@ -66,18 +66,18 @@ export default function LandingPage() {
           {/* Right Side: Text Content */}
           <div className="lg:col-span-7 py-12 lg:py-0 flex flex-col justify-center">
             <div className="max-w-2xl">
-              <h1 className="text-[40px] md:text-[56px] lg:text-[64px] font-bold text-[#13253F] leading-[1.1] tracking-tight mb-8">
+              <h1 className="text-[40px] md:text-[56px] lg:text-[68px] font-bold text-[#13253F] leading-[1.05] tracking-tight mb-10">
                 Transforma tu liderazgo <br className="hidden md:block" />
                 y alcanza resultados <br className="hidden md:block" />
                 exponenciales
               </h1>
               
               <div className="relative inline-block mt-4">
-                {/* Yellow Highlight Bar */}
-                <div className="absolute inset-y-0 -left-6 -right-10 bg-gradient-to-r from-[#F7C34D]/60 via-[#F7C34D]/40 to-transparent z-0 transform -skew-x-12"></div>
+                {/* Yellow Highlight Bar - More vibrant and precise */}
+                <div className="absolute inset-y-0 -left-6 -right-12 bg-gradient-to-r from-[#F7C34D]/70 via-[#F7C34D]/50 to-transparent z-0 transform -skew-x-12 rounded-l-md"></div>
                 
-                <p className="relative z-10 text-[18px] md:text-[22px] text-[#13253F] font-medium py-2 leading-relaxed">
-                  Te ayudo a desarrollar un <span className="font-bold underline decoration-[#13253F]/20 underline-offset-4">liderazgo estratégico</span> que acelere tus resultados.
+                <p className="relative z-10 text-[20px] md:text-[24px] text-[#13253F] font-medium py-3 leading-relaxed">
+                  Te ayudo a desarrollar un <span className="font-bold border-b-4 border-[#13253F]/10">liderazgo estratégico</span> que acelere tus resultados.
                 </p>
               </div>
             </div>
