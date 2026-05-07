@@ -206,7 +206,7 @@ export default function LandingPage() {
         {/* Absolute Image of Diego */}
         <div className="absolute bottom-0 left-0 w-full lg:w-5/12 h-[80%] lg:h-[110%] z-30 pointer-events-none flex justify-center lg:justify-end items-end px-6 lg:pl-16">
           <img 
-            src="/diego-hero.png" 
+            src="/diego-about.png" 
             alt="Diego Medina" 
             className="w-auto h-full max-h-[600px] lg:max-h-[850px] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto"
           />
