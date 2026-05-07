@@ -99,7 +99,7 @@ export default function LandingPage() {
       {/* Mentalidad Estratégica Section */}
       <section className="bg-[#13253F] py-24 md:py-32 px-6 text-center">
         <div className="container mx-auto max-w-4xl">
-          <p className="text-white text-[18px] md:text-[22px] font-medium mb-8 tracking-tight">
+          <p className="text-white text-[22px] md:text-[28px] font-bold mb-8 tracking-tight">
             ¿Estás preparado para el siguiente nivel?
           </p>
           
@@ -112,7 +112,7 @@ export default function LandingPage() {
             </div>
           </div>
           
-          <p className="text-white text-[16px] md:text-[20px] lg:text-[22px] font-normal max-w-3xl mx-auto leading-relaxed opacity-90">
+          <p className="text-white text-[20px] md:text-[26px] lg:text-[30px] font-bold max-w-3xl mx-auto leading-relaxed opacity-90">
             Transforma tu liderazgo y conviértete en el estratega que <br className="hidden md:block" />
             impulsa el crecimiento y acelera los resultados.
           </p>
