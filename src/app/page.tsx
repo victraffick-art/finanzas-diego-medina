@@ -130,13 +130,13 @@ export default function LandingPage() {
           <div className="absolute inset-0 bg-white/85"></div>
         </div>
 
-        <div className="container mx-auto relative z-10 flex flex-col lg:flex-row">
+        <div className="container mx-auto max-w-6xl relative z-10 flex flex-col lg:flex-row h-full">
           
           {/* Spacer for Desktop Image */}
-          <div className="hidden lg:block lg:w-5/12"></div>
+          <div className="hidden lg:block lg:w-1/2"></div>
 
           {/* Text Content */}
-          <div className="w-full lg:w-7/12 px-6 py-16 lg:py-24 relative z-10 lg:pl-12">
+          <div className="w-full lg:w-1/2 px-6 py-16 lg:py-24 relative z-10 lg:pl-16">
             <h2 className="text-[#13253F] text-[32px] md:text-[44px] font-bold mb-8 tracking-tight">
               ¡Hola! Soy Diego Medina
             </h2>
@@ -160,11 +160,11 @@ export default function LandingPage() {
 
         {/* Bottom Blue Band */}
         <div className="w-full bg-[#13253F] relative z-20">
-          <div className="container mx-auto flex flex-col lg:flex-row">
+          <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row">
             {/* Spacer for Desktop Image */}
-            <div className="hidden lg:block lg:w-5/12"></div>
+            <div className="hidden lg:block lg:w-1/2"></div>
             
-            <div className="w-full lg:w-7/12 py-8 px-6 lg:pl-12 flex flex-wrap items-center justify-start gap-x-8 gap-y-6">
+            <div className="w-full lg:w-1/2 py-8 px-6 lg:pl-16 flex flex-wrap items-center justify-start gap-x-8 gap-y-6">
               {/* Logos */}
               <div className="flex items-center text-white gap-2 opacity-90 hover:opacity-100 transition-opacity">
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6.5 13h-13L12 6z"/></svg>
@@ -204,12 +204,14 @@ export default function LandingPage() {
         </div>
 
         {/* Absolute Image of Diego */}
-        <div className="absolute bottom-0 left-0 w-full lg:w-5/12 h-[80%] lg:h-[110%] z-30 pointer-events-none flex justify-center lg:justify-center items-end px-6 lg:pl-16">
-          <img 
-            src="/diego-about.png" 
-            alt="Diego Medina" 
-            className="w-auto h-full max-h-[600px] lg:max-h-[850px] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto"
-          />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[85%] lg:h-[115%] z-30 pointer-events-none flex items-end px-6">
+          <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-end pr-0 lg:pr-8">
+            <img 
+              src="/diego-about.png" 
+              alt="Diego Medina" 
+              className="w-auto h-full max-h-[750px] lg:max-h-[95vh] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto"
+            />
+          </div>
         </div>
       </section>
     </main>
