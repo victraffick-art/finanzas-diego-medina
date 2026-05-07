@@ -119,8 +119,99 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Next Section Placeholder */}
-      <div className="w-full h-[300px] bg-white"></div>
+      {/* About Me Section */}
+      <section id="sobre-mi" className="relative w-full overflow-hidden bg-white">
+        {/* Background Image Container */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+          style={{ backgroundImage: "url('/blurred-bg.png')" }}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-white/85"></div>
+        </div>
+
+        <div className="container mx-auto relative z-10 flex flex-col lg:flex-row">
+          
+          {/* Spacer for Desktop Image */}
+          <div className="hidden lg:block lg:w-5/12"></div>
+
+          {/* Text Content */}
+          <div className="w-full lg:w-7/12 px-6 py-16 lg:py-24 relative z-10 lg:pl-12">
+            <h2 className="text-[#13253F] text-[32px] md:text-[44px] font-bold mb-8 tracking-tight">
+              ¡Hola! Soy Diego Medina
+            </h2>
+            
+            <div className="space-y-6 text-[#13253F] text-[18px] md:text-[20px] font-medium leading-relaxed opacity-90">
+              <p>
+                He dedicado gran parte de mi vida a intentar ser un líder más auténtico.
+              </p>
+              <p>
+                Soy coach, speaker y entrenador en liderazgo y desarrollo personal para el alto rendimiento, partner del Maxwell Leadership®.
+              </p>
+              <p>
+                Durante más de 27 años estuve vinculado al sector financiero gestionando equipos para impulsar el máximo desempeño, la rentabilidad y la experiencia de las personas.
+              </p>
+              <p>
+                Creo que el mundo necesita líderes más auténticos. No jefes carismáticos o motivados por el ego, sino líderes reales, que pueden integrar a la gente con el propósito común de hacer el mundo un lugar mejor para todos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Blue Band */}
+        <div className="w-full bg-[#13253F] relative z-20">
+          <div className="container mx-auto flex flex-col lg:flex-row">
+            {/* Spacer for Desktop Image */}
+            <div className="hidden lg:block lg:w-5/12"></div>
+            
+            <div className="w-full lg:w-7/12 py-8 px-6 lg:pl-12 flex flex-wrap items-center justify-start gap-x-8 gap-y-6">
+              {/* Logos */}
+              <div className="flex items-center text-white gap-2 opacity-90 hover:opacity-100 transition-opacity">
+                <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6.5 13h-13L12 6z"/></svg>
+                <div className="flex flex-col leading-none">
+                  <span className="text-[14px] font-bold tracking-widest uppercase">Maxwell</span>
+                  <span className="text-[10px] font-light tracking-[0.25em] uppercase mt-0.5">Leadership</span>
+                </div>
+              </div>
+
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity">
+                <span className="text-[28px] font-black tracking-tight leading-none">IEPP</span>
+                <div className="flex flex-col ml-2 leading-[1.1]">
+                  <span className="text-[6px] font-bold uppercase tracking-wider">instituto</span>
+                  <span className="text-[6px] font-bold uppercase tracking-wider">europeo de</span>
+                  <span className="text-[6px] font-bold uppercase tracking-wider">psicología</span>
+                  <span className="text-[6px] font-bold uppercase tracking-wider">positiva</span>
+                </div>
+              </div>
+
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity gap-2">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+                <div className="flex flex-col leading-none">
+                  <span className="text-[20px] font-black tracking-tighter uppercase">LASALLE</span>
+                  <span className="text-[8px] font-medium tracking-[0.15em] uppercase mt-0.5">centro universitario</span>
+                </div>
+              </div>
+
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity">
+                 <svg className="w-8 h-8 fill-current mr-2" viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
+                 <div className="flex flex-col leading-none">
+                   <span className="text-[12px] font-bold tracking-widest uppercase">Coaching Hall</span>
+                   <span className="text-[8px] font-light tracking-[0.2em] uppercase mt-0.5">International</span>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Absolute Image of Diego */}
+        <div className="absolute bottom-0 left-0 w-full lg:w-5/12 h-[80%] lg:h-[110%] z-30 pointer-events-none flex justify-center lg:justify-end items-end px-6 lg:pl-16">
+          <img 
+            src="/diego-hero.png" 
+            alt="Diego Medina" 
+            className="w-auto h-full max-h-[600px] lg:max-h-[850px] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto"
+          />
+        </div>
+      </section>
     </main>
   );
 }
