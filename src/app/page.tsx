@@ -136,12 +136,12 @@ export default function LandingPage() {
           <div className="hidden lg:block lg:w-1/2"></div>
 
           {/* Text Content */}
-          <div className="w-full lg:w-1/2 px-6 py-10 lg:py-12 relative z-10 lg:pl-16">
-            <h2 className="text-[#13253F] text-[32px] md:text-[44px] font-bold mb-8 tracking-tight">
+          <div className="w-full lg:w-1/2 px-6 py-8 lg:py-10 relative z-10 lg:pl-16">
+            <h2 className="text-[#13253F] text-[28px] md:text-[38px] font-bold mb-4 tracking-tight">
               ¡Hola! Soy Diego Medina
             </h2>
             
-            <div className="space-y-6 text-[#13253F] text-[18px] md:text-[20px] font-medium leading-relaxed opacity-90">
+            <div className="space-y-4 text-[#13253F] text-[16px] md:text-[18px] font-medium leading-relaxed opacity-90">
               <p>
                 He dedicado gran parte de mi vida a intentar ser un líder más auténtico.
               </p>
@@ -162,41 +162,41 @@ export default function LandingPage() {
         <div className="w-full bg-[#13253F] relative z-20">
           <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row">
             {/* Spacer for Desktop Image */}
-            <div className="hidden lg:block lg:w-1/2"></div>
+            <div className="hidden lg:block lg:w-1/3"></div>
             
-            <div className="w-full lg:w-1/2 py-8 px-6 lg:pl-16 flex flex-wrap items-center justify-start gap-x-8 gap-y-6">
+            <div className="w-full lg:w-2/3 py-5 px-6 flex flex-row flex-nowrap items-center justify-between gap-4 overflow-x-auto scrollbar-hide">
               {/* Logos */}
-              <div className="flex items-center text-white gap-2 opacity-90 hover:opacity-100 transition-opacity">
-                <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6.5 13h-13L12 6z"/></svg>
+              <div className="flex items-center text-white gap-2 opacity-90 hover:opacity-100 transition-opacity whitespace-nowrap shrink-0">
+                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6.5 13h-13L12 6z"/></svg>
                 <div className="flex flex-col leading-none">
-                  <span className="text-[14px] font-bold tracking-widest uppercase">Maxwell</span>
-                  <span className="text-[10px] font-light tracking-[0.25em] uppercase mt-0.5">Leadership</span>
+                  <span className="text-[12px] font-bold tracking-widest uppercase">Maxwell</span>
+                  <span className="text-[8px] font-light tracking-[0.25em] uppercase mt-0.5">Leadership</span>
                 </div>
               </div>
 
-              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity">
-                <span className="text-[28px] font-black tracking-tight leading-none">IEPP</span>
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity whitespace-nowrap shrink-0">
+                <span className="text-[24px] font-black tracking-tight leading-none">IEPP</span>
                 <div className="flex flex-col ml-2 leading-[1.1]">
-                  <span className="text-[6px] font-bold uppercase tracking-wider">instituto</span>
-                  <span className="text-[6px] font-bold uppercase tracking-wider">europeo de</span>
-                  <span className="text-[6px] font-bold uppercase tracking-wider">psicología</span>
-                  <span className="text-[6px] font-bold uppercase tracking-wider">positiva</span>
+                  <span className="text-[5px] font-bold uppercase tracking-wider">instituto</span>
+                  <span className="text-[5px] font-bold uppercase tracking-wider">europeo de</span>
+                  <span className="text-[5px] font-bold uppercase tracking-wider">psicología</span>
+                  <span className="text-[5px] font-bold uppercase tracking-wider">positiva</span>
                 </div>
               </div>
 
-              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity gap-2">
-                <div className="w-3 h-3 bg-white rounded-full"></div>
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity gap-2 whitespace-nowrap shrink-0">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
                 <div className="flex flex-col leading-none">
-                  <span className="text-[20px] font-black tracking-tighter uppercase">LASALLE</span>
-                  <span className="text-[8px] font-medium tracking-[0.15em] uppercase mt-0.5">centro universitario</span>
+                  <span className="text-[16px] font-black tracking-tighter uppercase">LASALLE</span>
+                  <span className="text-[6px] font-medium tracking-[0.15em] uppercase mt-0.5">centro universitario</span>
                 </div>
               </div>
 
-              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity">
-                 <svg className="w-8 h-8 fill-current mr-2" viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity whitespace-nowrap shrink-0">
+                 <svg className="w-6 h-6 fill-current mr-2" viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
                  <div className="flex flex-col leading-none">
-                   <span className="text-[12px] font-bold tracking-widest uppercase">Coaching Hall</span>
-                   <span className="text-[8px] font-light tracking-[0.2em] uppercase mt-0.5">International</span>
+                   <span className="text-[10px] font-bold tracking-widest uppercase">Coaching Hall</span>
+                   <span className="text-[6px] font-light tracking-[0.2em] uppercase mt-0.5">International</span>
                  </div>
               </div>
             </div>
@@ -204,12 +204,12 @@ export default function LandingPage() {
         </div>
 
         {/* Absolute Image of Diego */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[90%] lg:h-[125%] z-30 pointer-events-none flex items-end px-6">
-          <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-end pr-0 lg:pr-8">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[95%] lg:h-[135%] z-30 pointer-events-none flex items-end px-6">
+          <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-end pr-0 lg:pr-12">
             <img 
               src="/diego-about.png" 
               alt="Diego Medina" 
-              className="w-auto h-full lg:min-h-[600px] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto"
+              className="w-auto h-full lg:min-h-[500px] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto transform scale-110 lg:scale-[1.15] origin-bottom"
             />
           </div>
         </div>
