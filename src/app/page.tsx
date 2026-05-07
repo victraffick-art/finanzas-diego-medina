@@ -97,13 +97,13 @@ export default function LandingPage() {
       </section>
 
       {/* Mentalidad Estratégica Section */}
-      <section className="bg-[#13253F] py-24 md:py-32 px-6 text-center">
-        <div className="container mx-auto max-w-4xl">
-          <p className="text-white text-[22px] md:text-[28px] font-bold mb-8 tracking-tight">
+      <section className="bg-[#13253F] py-12 md:py-16 px-6 text-center">
+        <div className="container mx-auto max-w-5xl">
+          <p className="text-white text-[22px] md:text-[28px] font-bold mb-4 md:mb-6 tracking-tight">
             ¿Estás preparado para el siguiente nivel?
           </p>
           
-          <div className="flex flex-col items-center mb-12 gap-2 md:gap-4 lg:gap-6">
+          <div className="flex flex-col items-center mb-8 gap-2 md:gap-4 lg:gap-6">
             <h2 className="text-[#00AEEF] text-[60px] md:text-[100px] lg:text-[150px] font-black leading-none tracking-tighter drop-shadow-2xl uppercase">
               MENTALIDAD
             </h2>
@@ -112,9 +112,9 @@ export default function LandingPage() {
             </div>
           </div>
           
-          <p className="text-white text-[20px] md:text-[26px] lg:text-[30px] font-bold max-w-3xl mx-auto leading-relaxed opacity-90">
-            Transforma tu liderazgo y conviértete en el estratega que <br className="hidden md:block" />
-            impulsa el crecimiento y acelera los resultados.
+          <p className="text-white text-[20px] md:text-[26px] lg:text-[30px] font-bold max-w-5xl mx-auto leading-tight md:leading-relaxed opacity-90 px-4">
+            Transforma tu liderazgo y conviértete en el estratega <br className="hidden md:block" />
+            que impulsa el crecimiento y acelera los resultados.
           </p>
         </div>
       </section>
