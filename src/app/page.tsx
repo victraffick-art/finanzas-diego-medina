@@ -136,7 +136,7 @@ export default function LandingPage() {
           <div className="hidden lg:block lg:w-1/2"></div>
 
           {/* Text Content */}
-          <div className="w-full lg:w-1/2 px-6 py-16 lg:py-24 relative z-10 lg:pl-16">
+          <div className="w-full lg:w-1/2 px-6 py-10 lg:py-12 relative z-10 lg:pl-16">
             <h2 className="text-[#13253F] text-[32px] md:text-[44px] font-bold mb-8 tracking-tight">
               ¡Hola! Soy Diego Medina
             </h2>
@@ -204,12 +204,12 @@ export default function LandingPage() {
         </div>
 
         {/* Absolute Image of Diego */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[85%] lg:h-[115%] z-30 pointer-events-none flex items-end px-6">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[90%] lg:h-[125%] z-30 pointer-events-none flex items-end px-6">
           <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-end pr-0 lg:pr-8">
             <img 
               src="/diego-about.png" 
               alt="Diego Medina" 
-              className="w-auto h-full max-h-[750px] lg:max-h-[95vh] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto"
+              className="w-auto h-full lg:min-h-[600px] object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-auto"
             />
           </div>
         </div>
