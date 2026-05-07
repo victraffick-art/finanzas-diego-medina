@@ -124,7 +124,7 @@ export default function LandingPage() {
         {/* Background Image Container */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
-          style={{ backgroundImage: "url('/blurred-bg.png')" }}
+          style={{ backgroundImage: "url('/conference-bg.png')" }}
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-white/85"></div>
