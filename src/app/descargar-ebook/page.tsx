@@ -16,9 +16,9 @@ export default function DescargarEbook() {
     setError("");
 
     try {
-      // Guardar en Supabase, en la tabla tabla_de_contactos_para_el_ebook
+      // Guardar en Supabase, en la tabla clientes_ebook
       const { error: supabaseError } = await supabase
-        .from("tabla_de_contactos_para_el_ebook")
+        .from("clientes_ebook")
         .insert([{ nombre, correo, ebook: "Rompe Tus Limites" }]);
 
       if (supabaseError) {
