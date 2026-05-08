@@ -22,13 +22,9 @@ export default function Footer() {
         </div>
 
         {/* Links Section */}
-        <div className="flex flex-wrap justify-center gap-2 text-white text-xs md:text-sm mb-4 opacity-90">
-          <Link href="/privacidad" className="hover:text-[#00AEEF] transition-colors">
-            Política de Privacidad
-          </Link>
-          <span className="mx-1">|</span>
-          <Link href="/terminos" className="hover:text-[#00AEEF] transition-colors">
-            Términos y Condiciones
+        <div className="flex justify-center text-white text-xs md:text-sm mb-4 opacity-90">
+          <Link href="/politica-de-privacidad" className="hover:text-[#00AEEF] transition-colors">
+            Política de Privacidad | Términos y Condiciones
           </Link>
         </div>
 
