@@ -225,10 +225,12 @@ export default function LandingPage() {
               En esta ligera guía está lo que creo que será una de las cosas mas importantes que jamás aprenderás. ¡Lo sé! Suena demasiado bueno para ser verdad, sin embargo léelo hasta el final, no te tomará más de 15 minutos. ¿Qué tanto puedes perder?
             </p>
             
-            <div className="w-full flex justify-center lg:justify-end lg:pr-8">
-              <button className="bg-[#FCD144] hover:bg-[#ffde6a] text-[#13253F] font-bold text-[14px] md:text-[15px] tracking-wide px-10 py-4 rounded-full transition-colors duration-300 shadow-md">
-                DESCÁRGALO GRATIS
-              </button>
+            <div className="w-full flex justify-center lg:justify-start lg:pr-8">
+              <Link href="/descargar-ebook">
+                <button className="bg-[#FCD144] hover:bg-[#ffde6a] text-[#13253F] font-bold text-[14px] md:text-[15px] tracking-wide px-10 py-4 rounded-full transition-colors duration-300 shadow-md cursor-pointer">
+                  DESCÁRGALO GRATIS
+                </button>
+              </Link>
             </div>
           </div>
 
