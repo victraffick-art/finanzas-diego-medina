@@ -53,16 +53,16 @@ export default function SocialSection() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
           
           {/* Text and Icons */}
-          <div className="flex-1 py-12 md:py-20 text-center md:text-left">
-            <h2 className="text-[#13253F] text-2xl md:text-3xl font-bold mb-6 leading-tight max-w-xl">
+          <div className="flex-1 py-12 md:py-20 text-center">
+            <h2 className="text-[#13253F] text-2xl md:text-3xl font-bold mb-6 leading-tight max-w-xl mx-auto">
               Ideas, inspiración y estrategias para el desarrollo de tu liderazgo
             </h2>
-            <p className="text-[#3a4856] text-sm md:text-base mb-8 max-w-xl opacity-90">
+            <p className="text-[#3a4856] text-sm md:text-base mb-8 max-w-xl mx-auto opacity-90">
               Suscríbete a mis redes sociales, activa las notificaciones y disfruta de toda la información poderosa y práctica que puedes aplicar de inmediato en tu vida:
             </p>
 
             {/* Social Icons */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               {socialLinks.map((item, index) => (
                 <a
                   key={index}
@@ -79,7 +79,7 @@ export default function SocialSection() {
           </div>
 
           {/* Diego Image */}
-          <div className="relative flex-1 flex justify-center md:justify-end items-end pt-8 md:pt-0">
+          <div className="relative flex-1 flex justify-center items-end pt-8 md:pt-0">
             <img 
               src="/diego-books.png" 
               alt="Diego Medina con libros" 
