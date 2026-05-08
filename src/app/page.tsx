@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Testimonials from "@/components/Testimonials";
 import SocialSection from "@/components/SocialSection";
+import Footer from "@/components/Footer";
 
 /**
  * Main Landing Page Component
@@ -248,6 +249,9 @@ export default function LandingPage() {
 
       {/* Social Media Section */}
       <SocialSection />
+
+      {/* Footer */}
+      <Footer />
 
     </main>
   );
