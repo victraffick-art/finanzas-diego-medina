@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Testimonials from "@/components/Testimonials";
 
 export default function LandingPage() {
   return (
@@ -235,10 +236,11 @@ export default function LandingPage() {
           </div>
 
         </div>
-        
-        {/* Light Gray Bottom Band */}
-        <div className="w-full h-16 md:h-24 bg-[#f4f6f9]"></div>
       </section>
+
+      {/* Testimonials Slider */}
+      <Testimonials />
+
     </main>
   );
 }
