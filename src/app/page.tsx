@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Testimonials from "@/components/Testimonials";
+import SocialSection from "@/components/SocialSection";
 
 export default function LandingPage() {
   return (
@@ -240,6 +241,9 @@ export default function LandingPage() {
 
       {/* Testimonials Slider */}
       <Testimonials />
+
+      {/* Social Media Section */}
+      <SocialSection />
 
     </main>
   );
