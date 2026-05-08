@@ -34,10 +34,10 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 
 export default function SocialSection() {
   const socialLinks = [
-    { icon: FacebookIcon, href: 'https://facebook.com', label: 'Facebook' },
-    { icon: YoutubeIcon, href: 'https://youtube.com', label: 'YouTube' },
-    { icon: InstagramIcon, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: LinkedinIcon, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: FacebookIcon, href: "https://www.facebook.com/@soydiegomedina.co/", label: "Facebook" },
+    { icon: YoutubeIcon, href: "https://www.youtube.com/@diegomedina-co", label: "YouTube" },
+    { icon: InstagramIcon, href: "https://www.instagram.com/diegomedinatamayo/", label: "Instagram" },
+    { icon: LinkedinIcon, href: "https://www.linkedin.com/in/diegomedina-co/", label: "LinkedIn" },
   ];
 
   return (
