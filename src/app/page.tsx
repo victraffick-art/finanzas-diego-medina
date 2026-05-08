@@ -164,7 +164,7 @@ export default function LandingPage() {
             {/* Spacer for Desktop Image */}
             <div className="hidden lg:block lg:w-1/3"></div>
             
-            <div className="w-full lg:w-2/3 py-2 px-6 flex items-center justify-center lg:justify-start">
+            <div className="w-full lg:w-2/3 py-2 px-6 lg:pl-16 flex items-center justify-center lg:justify-start">
               <img 
                 src="/logos-partners-blue.png" 
                 alt="Partners y certificaciones" 
@@ -176,7 +176,7 @@ export default function LandingPage() {
 
         {/* Absolute Image of Diego */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[95%] lg:h-[135%] z-30 pointer-events-none flex items-end px-6">
-          <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-end pr-0 lg:pr-12">
+          <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-end lg:translate-x-12">
             <img 
               src="/diego-about.png" 
               alt="Diego Medina" 
