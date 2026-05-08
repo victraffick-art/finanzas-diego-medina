@@ -61,23 +61,23 @@ export default function Testimonials() {
   const currentTestimonial = TESTIMONIALS[currentIndex];
 
   return (
-    <section className="w-full bg-[#f4f6f9] py-16 md:py-24 overflow-hidden relative">
+    <section className="w-full bg-[#f4f6f9] py-8 md:py-12 overflow-hidden relative">
       <div className="container mx-auto px-6 max-w-6xl relative z-10 flex items-center justify-center">
         
         {/* Left Arrow */}
         <button 
           onClick={handlePrev}
-          className="absolute left-2 md:left-10 z-20 w-10 h-10 md:w-12 md:h-12 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md hidden md:flex"
+          className="absolute left-2 md:left-10 z-20 w-8 h-8 md:w-10 md:h-10 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md hidden md:flex"
           aria-label="Anterior"
         >
-          <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
+          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
         </button>
 
         {/* Testimonial Content */}
-        <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-8 md:gap-12 transition-opacity duration-500 px-4 md:px-16" style={{ opacity: isAnimating ? 0 : 1 }}>
+        <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-6 md:gap-10 transition-opacity duration-500 px-4 md:px-16" style={{ opacity: isAnimating ? 0 : 1 }}>
           
           {/* Avatar */}
-          <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden">
+          <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 rounded-full overflow-hidden">
             <img 
               src={currentTestimonial.image} 
               alt={currentTestimonial.name}
@@ -91,11 +91,11 @@ export default function Testimonials() {
 
           {/* Text */}
           <div className="flex flex-col text-center md:text-left">
-            <h4 className="text-[#13253F] text-lg md:text-xl mb-4">
+            <h4 className="text-[#13253F] text-sm md:text-base mb-2">
               <span className="font-extrabold">{currentTestimonial.name}</span> | <span className="font-normal">{currentTestimonial.role}</span> | <span className="font-extrabold">{currentTestimonial.country}</span>
             </h4>
             
-            <div className="text-[#3a4856] text-sm md:text-base leading-relaxed opacity-90 whitespace-pre-wrap">
+            <div className="text-[#3a4856] text-xs md:text-sm leading-relaxed opacity-90 whitespace-pre-wrap">
               {currentTestimonial.text}
             </div>
           </div>
@@ -105,35 +105,35 @@ export default function Testimonials() {
         {/* Right Arrow */}
         <button 
           onClick={handleNext}
-          className="absolute right-2 md:right-10 z-20 w-10 h-10 md:w-12 md:h-12 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md hidden md:flex"
+          className="absolute right-2 md:right-10 z-20 w-8 h-8 md:w-10 md:h-10 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md hidden md:flex"
           aria-label="Siguiente"
         >
-          <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
+          <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
         </button>
 
       </div>
       
-      {/* Mobile controls (dots or simple arrows) since absolute arrows might overlap on small screens */}
-      <div className="flex justify-center items-center gap-4 mt-8 md:hidden">
+      {/* Mobile controls */}
+      <div className="flex justify-center items-center gap-4 mt-6 md:hidden">
         <button 
           onClick={handlePrev}
-          className="w-10 h-10 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md"
+          className="w-8 h-8 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md"
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronLeft className="w-5 h-5" />
         </button>
         <div className="flex gap-2">
           {TESTIMONIALS.map((_, idx) => (
             <div 
               key={idx} 
-              className={`w-2 h-2 rounded-full ${idx === currentIndex ? 'bg-[#13253F]' : 'bg-gray-300'}`}
+              className={`w-1.5 h-1.5 rounded-full ${idx === currentIndex ? 'bg-[#13253F]' : 'bg-gray-300'}`}
             />
           ))}
         </div>
         <button 
           onClick={handleNext}
-          className="w-10 h-10 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md"
+          className="w-8 h-8 bg-[#FCD144] rounded-full flex items-center justify-center text-white hover:bg-[#ffde6a] transition-colors shadow-md"
         >
-          <ChevronRight className="w-6 h-6" />
+          <ChevronRight className="w-5 h-5" />
         </button>
       </div>
     </section>
