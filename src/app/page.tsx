@@ -193,6 +193,48 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Ebook Gratuito Section */}
+      <section id="ebook" className="w-full bg-white relative overflow-hidden">
+        <div className="container mx-auto max-w-6xl px-6 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-16 relative z-10">
+          
+          {/* Ebook Image */}
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <img 
+              src="/ebook-cover.png" 
+              alt="Rompe Tus Limites - Ebook Gratuito" 
+              className="w-full max-w-[320px] md:max-w-[400px] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)] transform -rotate-3 transition-transform hover:-rotate-1 duration-500"
+            />
+          </div>
+
+          {/* Ebook Content */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <h2 className="text-[#13253F] text-[26px] md:text-[32px] font-bold mb-10">
+              Ebook Gratuito
+            </h2>
+            
+            <h3 className="text-[#13253F] text-[18px] md:text-[22px] font-bold mb-6 tracking-tight">
+              ¿Por qué nos cuesta tanto sostener el esfuerzo?
+            </h3>
+            
+            <p className="text-[#13253F] text-[16px] md:text-[18px] mb-6 font-medium opacity-90 leading-relaxed">
+              ¿Qué pasaría si pudiera mostrarte una nueva forma de pensar que resolvería de tajo todo este problema?
+            </p>
+            
+            <p className="text-[#13253F] text-[16px] md:text-[18px] mb-10 font-medium opacity-90 leading-relaxed">
+              En esta ligera guía está lo que creo que será una de las cosas mas importantes que jamás aprenderás. ¡Lo sé! Suena demasiado bueno para ser verdad, sin embargo léelo hasta el final, no te tomará más de 15 minutos. ¿Qué tanto puedes perder?
+            </p>
+            
+            <button className="bg-[#FCD144] hover:bg-[#ffde6a] text-[#13253F] font-bold text-[14px] md:text-[15px] tracking-wide px-10 py-4 rounded-full transition-colors duration-300 shadow-md">
+              DESCÁRGALO GRATIS
+            </button>
+          </div>
+
+        </div>
+        
+        {/* Light Gray Bottom Band */}
+        <div className="w-full h-16 md:h-24 bg-[#f4f6f9]"></div>
+      </section>
     </main>
   );
 }
