@@ -2,6 +2,10 @@ import Link from \"next/link\";
 import Testimonials from \"@/components/Testimonials\";
 import SocialSection from \"@/components/SocialSection\";
 
+/**
+ * Main Landing Page Component
+ * Includes Hero, About, Ebook, Testimonials and Social sections.
+ */
 export default function LandingPage() {
   return (
     <main className=\"min-h-screen bg-white\">
