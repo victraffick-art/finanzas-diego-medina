@@ -5,7 +5,7 @@ export default function PoliticaPrivacidad() {
   return (
     <main className="min-h-screen bg-[#13253F] text-white">
       {/* Minimalist Professional Banner */}
-      <nav className="w-full py-6 px-6 md:px-16 flex justify-between items-center border-b border-white/10">
+      <nav className="w-full py-6 px-6 md:px-16 flex justify-between items-center border-b border-white/10 sticky top-0 bg-[#13253F]/80 backdrop-blur-md z-50">
         <Link href="/" className="flex flex-col group">
           <div className="flex items-baseline text-xl md:text-2xl tracking-tight transition-transform group-hover:scale-105">
             <span className="font-bold">Dieg</span>
@@ -27,83 +27,161 @@ export default function PoliticaPrivacidad() {
 
       {/* Content Section */}
       <div className="container mx-auto max-w-4xl px-6 py-16 md:py-24">
-        <h1 className="text-3xl md:text-5xl font-black mb-12 tracking-tight text-center md:text-left">
-          POLÍTICA DE PRIVACIDAD <span className="text-[#FCD144] block md:inline">Y TÉRMINOS Y CONDICIONES</span>
-        </h1>
+        <div className="mb-12 text-center md:text-left">
+          <p className="text-[#00AEEF] text-sm font-bold tracking-widest uppercase mb-4">Actualizado al 22 de diciembre del 2022</p>
+          <h1 className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
+            POLÍTICA DE PRIVACIDAD <span className="text-[#FCD144] block md:inline">Y TÉRMINOS Y CONDICIONES</span>
+          </h1>
+          <p className="text-xl text-gray-300 font-medium italic">
+            Desde DIEGOMEDINA.CO tratamos los datos personales con respeto y sensibilidad.
+          </p>
+        </div>
 
-        <div className="space-y-10 text-gray-200 leading-relaxed font-medium">
-          <section>
-            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">DATOS SOLICITADOS Y FINALIDAD</h2>
+        <div className="space-y-12 text-gray-200 leading-relaxed font-medium">
+          <section className="space-y-4">
             <p>
-              DIEGOMEDINA.CO informa a los usuarios que el tratamiento de los datos personales se realiza de acuerdo con las normativas vigentes en materia de protección de datos. Los datos solicitados (nombre y correo electrónico) a través de los formularios de contacto, suscripción a la newsletter o compra de productos, tienen como finalidad:
+              Esta política de privacidad junto con el aviso legal, política de cookies, de ventas, términos y condiciones, y cualquier otra política a la que se haga referencia, identifica cómo se recopilan y procesan los datos personales que se reciben en este sitio web.
             </p>
-            <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-300">
-              <li>Responder a las consultas, sugerencias o solicitudes de los usuarios.</li>
-              <li>Gestionar la suscripción a boletines informativos y comunicaciones comerciales electrónicas.</li>
-              <li>Tramitar la compra de productos o servicios ofrecidos en el sitio web.</li>
-              <li>Cumplir con las obligaciones legales y contables derivadas de la actividad comercial.</li>
+            <p>
+              La información que se encuentra en este sitio web no está dirigida a niños. Se entenderá por niño lo que la ley de la jurisdicción donde se encuentre así lo defina, en el caso de Estados Unidos de América es alguien menor a 13 años. Si el usuario cree que algún niño ha proporcionado sus datos personales en este sitio web sin el consentimiento de los padres, deberá escribir a <span className="text-[#00AEEF] font-bold">contacto@diegomedina.co</span>.
+            </p>
+            <p>
+              Si el usuario tiene menos de 13 años, deberá tener la autorización de sus padres o tutores legales para entregar sus datos personales. DIEGOMEDINA.CO no tiene manera de comprobar efectivamente la edad de los usuarios, por lo que queda eximida de cualquier responsabilidad, si el usuario no cumple con lo aquí indicado. En DIEGOMEDINA.CO cumplimos con la Ley de Protección de la Privacidad en Línea de los Niños de 1998 (“COPPA”).
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-[#FCD144] text-xl font-bold mb-6 uppercase tracking-wider border-l-4 border-[#FCD144] pl-4">DATOS IDENTIFICATIVOS DEL RESPONSABLE</h2>
+            <p className="mb-4 italic">Tal y como recoge la normativa vigente, te informamos que:</p>
+            <ul className="space-y-4">
+              <li className="flex gap-2">
+                <span className="text-[#FCD144]">•</span>
+                <span><strong>Denominación social:</strong> DIEGOMEDINA.CO</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#FCD144]">•</span>
+                <span><strong>Domicilio social:</strong> Rionegro, Antioquia, Calle 26, Colombia.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#FCD144]">•</span>
+                <span><strong>Email de contacto:</strong> contacto@diegomedina.co</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#FCD144]">•</span>
+                <span><strong>Actividad social:</strong> formación, mentoring y asesoría personal.</span>
+              </li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">COOKIES</h2>
-            <p>
-              Este sitio web utiliza cookies propias y de terceros para mejorar la experiencia de navegación, realizar análisis estadísticos y mostrar publicidad personalizada. El usuario puede configurar su navegador para aceptar o rechazar las cookies, o para recibir un aviso cuando se instale una.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">TUS DERECHOS</h2>
-            <p>Los titulares de los datos tienen derecho a:</p>
-            <ul className="list-disc pl-6 mt-4 space-y-2 text-gray-300">
-              <li>Acceder a sus datos personales.</li>
-              <li>Solicitar la rectificación de datos inexactos.</li>
-              <li>Solicitar la supresión de sus datos cuando ya no sean necesarios para los fines que fueron recogidos.</li>
-              <li>Oponerse al tratamiento de sus datos.</li>
-              <li>Solicitar la limitación del tratamiento.</li>
-              <li>Portabilidad de los datos.</li>
-            </ul>
-            <p className="mt-6">
-              Para ejercer estos derechos, el usuario debe enviar una comunicación escrita al correo electrónico: <span className="text-[#00AEEF] font-bold underline">contacto@diegomedina.co</span>.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">ENCARGADOS DEL TRATAMIENTO</h2>
-            <p>
-              DIEGOMEDINA.CO puede contratar a terceros para el tratamiento de datos en su nombre (como proveedores de hosting, servicios de email marketing o pasarelas de pago). Estos proveedores actúan como encargados del tratamiento y están obligados a cumplir con las medidas de seguridad y privacidad establecidas por ley.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">NEWSLETTER</h2>
-            <p>
-              El envío de boletines comerciales se realiza bajo el consentimiento explícito del usuario. En cada comunicación se incluye un enlace para darse de baja de forma automática y sencilla. Los datos de suscripción se conservarán mientras el usuario no retire su consentimiento.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">MODERACIÓN DE COMENTARIOS</h2>
-            <p>
-              En las secciones donde se permiten comentarios, DIEGOMEDINA.CO se reserva el derecho de eliminar aquellos que sean ofensivos, ilegales o que no guarden relación con la temática del sitio. Los datos facilitados para comentar se tratarán con el fin de publicar y moderar dicha participación.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">DURACIÓN DEL TRATAMIENTO</h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li>Los datos de facturación se conservarán por el tiempo legalmente exigido.</li>
-              <li>Los datos de suscripción y contacto se conservarán mientras el titular desee permanecer en la lista o hasta que solicite su eliminación.</li>
+            <h2 className="text-[#FCD144] text-xl font-bold mb-6 uppercase tracking-wider border-l-4 border-[#FCD144] pl-4">DATOS SOLICITADOS Y FINALIDAD</h2>
+            <ul className="space-y-6">
+              <li className="bg-white/5 p-6 rounded-lg border border-white/10 hover:border-[#00AEEF]/50 transition-colors">
+                <h3 className="font-bold text-white mb-2 underline decoration-[#00AEEF] underline-offset-4">Formularios de contacto:</h3>
+                <p>Nombre, apellidos y correo electrónico para realizar cualquier contacto directo con DIEGOMEDINA.CO. No suministrar estos datos imposibilitará responder a la petición.</p>
+              </li>
+              <li className="bg-white/5 p-6 rounded-lg border border-white/10 hover:border-[#00AEEF]/50 transition-colors">
+                <h3 className="font-bold text-white mb-2 underline decoration-[#00AEEF] underline-offset-4">Comentarios en el blog:</h3>
+                <p>Nombre, correo electrónico para poder realizar comentarios en el blog del sitio web.</p>
+              </li>
+              <li className="bg-white/5 p-6 rounded-lg border border-white/10 hover:border-[#00AEEF]/50 transition-colors">
+                <h3 className="font-bold text-white mb-2 underline decoration-[#00AEEF] underline-offset-4">Pagos de servicios:</h3>
+                <p>Nombre, apellidos, dirección, teléfono, correo electrónico, número de identificación fiscal para procesar todo lo relacionado con el cliente.</p>
+              </li>
+              <li className="bg-white/5 p-6 rounded-lg border border-white/10 hover:border-[#00AEEF]/50 transition-colors">
+                <h3 className="font-bold text-white mb-2 underline decoration-[#00AEEF] underline-offset-4">Newsletter:</h3>
+                <p>Nombre, teléfono y correo electrónico para enviar boletines comerciales automatizados sobre publicidad y promociones con consentimiento expreso.</p>
+              </li>
+              <li className="bg-white/5 p-6 rounded-lg border border-white/10 hover:border-[#00AEEF]/50 transition-colors">
+                <h3 className="font-bold text-white mb-2 underline decoration-[#00AEEF] underline-offset-4">Área de cliente:</h3>
+                <p>Correo electrónico para poder acceder a la cuenta personal de acuerdo con los datos suministrados.</p>
+              </li>
             </ul>
           </section>
 
-          <section className="pt-10 border-t border-white/10 text-center md:text-left">
-            <p className="text-sm opacity-60">
-              DIEGOMEDINA.CO cumple con la Ley de Privacidad del Consumidor de California de 2018 (CCPA) para usuarios aplicables.
+          <section className="space-y-4">
+            <p>
+              DIEGOMEDINA.CO en todo momento velará porque el uso que se le da al sitio web, a los contenidos, y al tratamiento de los datos personales del usuario, se realicen de la forma más correcta. Para ello, el usuario siempre podrá ejercer sus derechos escribiendo al <span className="text-[#00AEEF] font-bold underline">contacto@diegomedina.co</span>.
             </p>
-            <p className="text-sm opacity-60 mt-2">
-              © 2023 Diego Medina | Todos los derechos reservados
+            <p className="font-bold text-white text-lg">
+              DIEGOMEDINA.CO no vende ni venderá datos personales de los usuarios a otras empresas ni terceros.
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-[#FCD144] text-xl font-bold mb-6 uppercase tracking-wider border-l-4 border-[#FCD144] pl-4">FORMULARIOS</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="p-5 border border-white/10 rounded-xl bg-[#1a2d4a]">
+                <h4 className="font-bold text-[#00AEEF] mb-2">De contacto</h4>
+                <p className="text-sm">Facilitan la comunicación para dudas, presupuestos o reservas. El servidor del sitio web y del correo serán los encargados del tratamiento.</p>
+              </div>
+              <div className="p-5 border border-white/10 rounded-xl bg-[#1a2d4a]">
+                <h4 className="font-bold text-[#00AEEF] mb-2">De publicidad</h4>
+                <p className="text-sm">Datos para envío de publicidad e información comercial automatizada mediante email marketing.</p>
+              </div>
+              <div className="p-5 border border-white/10 rounded-xl bg-[#1a2d4a]">
+                <h4 className="font-bold text-[#00AEEF] mb-2">Para comentarios</h4>
+                <p className="text-sm">Identificación en el blog (nombre, email, sitio web). Visibles para otros usuarios para evitar spam.</p>
+              </div>
+              <div className="p-5 border border-white/10 rounded-xl bg-[#1a2d4a]">
+                <h4 className="font-bold text-[#00AEEF] mb-2">Para servicios</h4>
+                <p className="text-sm">Datos necesarios para procesar las solicitudes y servicios solicitados por el cliente mediante relación contractual.</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-[#FCD144] text-xl font-bold mb-6 uppercase tracking-wider border-l-4 border-[#FCD144] pl-4">DERECHOS DEL USUARIO</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              {['Acceso', 'Rectificación', 'Oposición', 'Supresión', 'Limitación', 'Portabilidad', 'Información'].map((derecho) => (
+                <div key={derecho} className="p-4 border border-white/10 rounded-lg bg-white/5 hover:bg-[#00AEEF]/20 transition-all">
+                  <span className="font-bold block">{derecho}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-sm text-gray-400">
+              * El ejercicio de estos derechos no debe interrumpir la prestación de un servicio o una obligación legal. Para ejercer cualquiera de ellos, escriba a contacto@diegomedina.co.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-[#FCD144] text-xl font-bold mb-6 uppercase tracking-wider border-l-4 border-[#FCD144] pl-4">ENCARGADOS DEL TRATAMIENTO</h2>
+            <p className="mb-6">DIEGOMEDINA.CO utiliza herramientas de terceros que garantizan la seguridad y cumplimiento de normativas internacionales:</p>
+            <div className="space-y-4">
+              {[
+                { name: 'Vercel / Supabase', desc: 'Infraestructura de hosting y gestión de base de datos segura.' },
+                { name: 'Google', desc: 'Google Ads, Analytics y Tag Manager para análisis y estadísticas.' },
+                { name: 'Facebook / Instagram / WhatsApp', desc: 'Redes sociales, comunicación directa y análisis publicitario (Meta Ireland Ltd).' },
+                { name: 'LinkedIn / Twitter / TikTok', desc: 'Presencia corporativa y difusión de contenidos profesionales.' },
+                { name: 'PayU / PayPal', desc: 'Pasarelas de pago seguras para transacciones con tarjetas y banca electrónica.' },
+                { name: 'Zoom', desc: 'Herramienta para videoconferencias y sesiones de mentoring.' }
+              ].map((item) => (
+                <div key={item.name} className="flex items-start gap-4 p-4 border-b border-white/10">
+                  <span className="text-[#00AEEF] font-bold min-w-[120px]">{item.name}:</span>
+                  <span className="text-sm text-gray-300">{item.desc}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-[#1a2d4a] p-8 rounded-2xl border border-[#FCD144]/30">
+            <h2 className="text-[#FCD144] text-xl font-bold mb-4 uppercase tracking-wider">INTERÉS LEGÍTIMO Y NEWSLETTER</h2>
+            <p className="mb-4">
+              Se recogen datos mediante formularios para lanzamientos o promociones basadas en el interés legítimo de aumentar ventas y cumplir con lo prometido al usuario. 
+            </p>
+            <p>
+              DIEGOMEDINA.CO es libre de enviar la newsletter cuando lo estime conveniente. El usuario puede darse de baja en cualquier momento mediante el enlace en el pie de página de cada correo. Todo el material está protegido por derechos de autor.
+            </p>
+          </section>
+
+          <section className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+              <p className="text-sm opacity-60">DIEGOMEDINA.CO cumple con la Ley de Privacidad del Consumidor de California (“CCPA”).</p>
+              <p className="text-sm opacity-60 mt-1">© 2023 Diego Medina | Todos los derechos reservados</p>
+            </div>
+            <Link href="/" className="px-6 py-2 border border-[#FCD144] text-[#FCD144] rounded-full hover:bg-[#FCD144] hover:text-[#13253F] transition-all font-bold uppercase text-xs tracking-widest">
+              Volver a la web
+            </Link>
           </section>
         </div>
       </div>
