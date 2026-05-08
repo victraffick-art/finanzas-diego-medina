@@ -37,6 +37,14 @@ const TESTIMONIALS: Testimonial[] = [
     country: "ECUADOR",
     text: "Gracias Diego por las excelentes charlas y mentorías que nos has dado a lo largo de este tiempo, que sin duda nos han permitido hacer nuestro propios auto-feedback de cómo podemos mejorar y cómo podemos llevar mejor adelante a nuestros equipos.",
     image: "/carolina-montero.png"
+  },
+  {
+    id: 4,
+    name: "Lina Sandoval",
+    role: "Relacionamiento Canal Corredores y agencias Múltiples",
+    country: "COLOMBIA",
+    text: "Tuve la oportunidad de contar con Diego y su experiencia para alinear la estrategia comercial del año con nuestro equipo de promotores. Un espacio que no solo superó las expectativas de todos sino que permitió más allá de la teoría, generar una sinergia a nivel nacional con cada uno de los asistentes, un gran reto, teniendo en cuenta la virtualidad.\nDiego atendió y entendió desde el principio nuestra necesidad y construyó una propuesta disruptiva, incluyente y estratégica de alto impacto.",
+    image: "/lina-sandoval.png"
   }
 ];
 
