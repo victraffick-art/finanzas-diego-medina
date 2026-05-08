@@ -159,17 +159,25 @@ export default function LandingPage() {
         </div>
 
         {/* Bottom Blue Band */}
-        <div className="w-full bg-[#13253F] relative z-20">
+        <div className="w-full bg-[#1c2f42] relative z-20 overflow-hidden">
           <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row">
             {/* Spacer for Desktop Image */}
-            <div className="hidden lg:block lg:w-1/3"></div>
+            <div className="hidden lg:block lg:w-1/3 shrink-0"></div>
             
-            <div className="w-full lg:w-2/3 py-2 px-6 lg:pl-16 flex items-center justify-center lg:justify-start">
-              <img 
-                src="/logos-partners-blue.png" 
-                alt="Partners y certificaciones" 
-                className="w-full max-w-[600px] h-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-              />
+            {/* Logos Slider */}
+            <div className="w-full lg:w-2/3 py-2 flex items-center overflow-hidden">
+              <div className="flex items-center w-max animate-marquee">
+                <img 
+                  src="/logos-partners-blue.png" 
+                  alt="Partners y certificaciones" 
+                  className="w-auto h-12 md:h-16 lg:h-16 object-contain opacity-90 hover:opacity-100 transition-opacity pr-12 lg:pr-24"
+                />
+                <img 
+                  src="/logos-partners-blue.png" 
+                  alt="Partners y certificaciones" 
+                  className="w-auto h-12 md:h-16 lg:h-16 object-contain opacity-90 hover:opacity-100 transition-opacity pr-12 lg:pr-24"
+                />
+              </div>
             </div>
           </div>
         </div>
