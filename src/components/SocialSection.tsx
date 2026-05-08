@@ -69,10 +69,10 @@ export default function SocialSection() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-20 h-20 md:w-28 md:h-28 border-4 border-[#13253F] rounded-full flex items-center justify-center text-[#13253F] hover:bg-[#13253F] hover:text-white transition-all duration-300"
+                  className="w-14 h-14 md:w-20 md:h-20 border-2 md:border-[3px] border-[#13253F] rounded-full flex items-center justify-center text-[#13253F] hover:bg-[#13253F] hover:text-white transition-all duration-300"
                   aria-label={item.label}
                 >
-                  <item.icon className="w-10 h-10 md:w-14 md:h-14" />
+                  <item.icon className="w-7 h-7 md:w-10 md:h-10" />
                 </a>
               ))}
             </div>
