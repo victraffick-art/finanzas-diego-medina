@@ -53,6 +53,14 @@ const TESTIMONIALS: Testimonial[] = [
     country: "COLOMBIA",
     text: "He quedado impresionado positivamente y encantado de la energía y conexión que generó Diego con los participantes de nuestro mentorship. Fluido en su diálogo, flexible a las necesidades que tuvimos, claro y efectivo en el mensaje, actualizado con las tendencias. Recomiendo a Diego como un experto en liderazgo empresarial y liderazgo transformacional.",
     image: "/luis-miguel.png"
+  },
+  {
+    id: 6,
+    name: "Yohania de Armas",
+    role: "Directora de Conecta Iberoamérica",
+    country: "ESPAÑA",
+    text: "He tenido una experiencia extraordinaria con Diego: es un profesional comprometido, adaptable y muy proactivo. Nos ha ofrecido un programa de Mentoring en Liderazgo que ha sido un desafío desde que se lo planteamos debido a la diversidad profesional y de objetivos de los mentees y sinceramente ha cumplido nuestras expectativas. Ha logrado elaborar una mentoria práctica y sumamente útil. En Conecta Iberoamérica estamos muy satisfechos de haber contado con su participación y contaremos con él en futuras oportunidades. 100% Recomendable.",
+    image: "/yohania-de-armas.png"
   }
 ];
 
