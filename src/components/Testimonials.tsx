@@ -16,19 +16,19 @@ interface Testimonial {
 const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
+    name: "Juan Lucero",
+    role: "Lawyer and mediator Co-Founder of Magnolia Foundation",
+    country: "GUATEMALA",
+    text: "Recientemente tuve la oportunidad de participar en una mentoria en Liderazgo a cargo de Diego. Solo puedo decir que Diego es un lider nato que, además, inspira a trabajar con valores pues es un gran ser humano. Su mentoria me permitió comprender a más profundidad la psicología humana y mi relación con otras personas. El conocimiento que Diego comparte es fundamental para el desarrollo de cualquier individuo u organización que desee tener un verdadero impacto en el mundo. Adicionalmente, Diego siempre inicia las sesiones con puntualidad y tiene la capacidad de transmitir conceptos complejos en una forma simple y accesible. Por todo lo anterior, sus cursos están 100% recomendados, e invito a todas y todos los profesionales en esta red a formar parte de las maravillosas mentorias de Diego.",
+    image: "/juan-lucero.png"
+  },
+  {
+    id: 2,
     name: "Luis Felipe Ordoñez",
     role: "Director Centro de Economía Circular",
     country: "COLOMBIA",
     text: "Si estás buscando fortalecer tu liderazgo y las competencias de tu Equipo de Trabajo, Diego es la Persona Indicada para ello. Conté con la Oportunidad de conocer y conectar con Diego a partir de un taller de Liderazgo organizado por la Red Conecta Iberoamérica, en el cual logramos identificar y desbloquear limitantes propios y del entorno que no nos permitían crecer como personas y por lo tanto desarrollar un verdadero liderazgo.\nDestaco su metodología, experiencia y orientación, la cual facilita el proceso y permite resultados concretos para quienes se atreven a llevar su propio proceso de transformación al siguiente nivel. Muchas Gracias Diego.",
-    image: "/testimonial-placeholder.jpg" // Placeholder until real image is provided
-  },
-  {
-    id: 2,
-    name: "Nombre Testimonio 2",
-    role: "Cargo Testimonio 2",
-    country: "PAÍS",
-    text: "Aquí irá el texto del segundo testimonio cuando lo envíes. Este es un texto de relleno para visualizar cómo se verá el slider automático una vez tengamos todos los testimonios completos.",
-    image: "/testimonial-placeholder.jpg"
+    image: "/luis-felipe.png"
   }
 ];
 
@@ -77,7 +77,7 @@ export default function Testimonials() {
         <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-8 md:gap-12 transition-opacity duration-500 px-4 md:px-16" style={{ opacity: isAnimating ? 0 : 1 }}>
           
           {/* Avatar */}
-          <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-white shadow-xl">
+          <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden">
             <img 
               src={currentTestimonial.image} 
               alt={currentTestimonial.name}
@@ -92,7 +92,7 @@ export default function Testimonials() {
           {/* Text */}
           <div className="flex flex-col text-center md:text-left">
             <h4 className="text-[#13253F] text-lg md:text-xl mb-4">
-              <span className="font-bold">{currentTestimonial.name}</span> | <span className="font-normal">{currentTestimonial.role}</span> | <span className="font-bold">{currentTestimonial.country}</span>
+              <span className="font-extrabold">{currentTestimonial.name}</span> | <span className="font-normal">{currentTestimonial.role}</span> | <span className="font-extrabold">{currentTestimonial.country}</span>
             </h4>
             
             <div className="text-[#3a4856] text-sm md:text-base leading-relaxed opacity-90 whitespace-pre-wrap">
