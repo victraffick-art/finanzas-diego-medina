@@ -164,58 +164,12 @@ export default function LandingPage() {
             {/* Spacer for Desktop Image */}
             <div className="hidden lg:block lg:w-1/3"></div>
             
-            <div className="w-full lg:w-2/3 py-4 px-6 flex flex-row flex-nowrap items-center justify-between gap-8 overflow-x-auto scrollbar-hide">
-              
-              {/* Maxwell Leadership */}
-              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity shrink-0">
-                <div className="flex flex-col text-left">
-                  <span className="text-[18px] font-extrabold tracking-widest uppercase leading-none">Maxwell</span>
-                  <span className="text-[10px] font-semibold tracking-[0.25em] uppercase mt-1 text-gray-200">Leadership</span>
-                </div>
-                <svg className="w-11 h-11 ml-3 fill-white" viewBox="0 0 100 100">
-                  <path d="M 10 80 Q 40 60 70 20 L 60 15 Q 35 55 5 75 Z" />
-                  <polygon points="75 10, 95 35, 65 30" />
-                </svg>
-              </div>
-
-              {/* IEPP */}
-              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity shrink-0">
-                <div className="relative flex items-center">
-                  <span className="text-[34px] font-black tracking-tighter leading-none">IEPP</span>
-                  <svg className="w-8 h-8 absolute -top-4 -right-6 fill-current" viewBox="0 0 24 24" style={{ transform: 'rotate(35deg)' }}>
-                    <path d="M12 2C17.5 2 22 6.5 22 12H19C19 8.1 15.9 5 12 5V2ZM12 6C15.3 6 18 8.7 18 12H15C15 10.3 13.7 9 12 9V6ZM12 10C13.1 10 14 10.9 14 12H12V10Z" />
-                  </svg>
-                </div>
-                <div className="flex flex-col ml-8 leading-[1.15] text-left">
-                  <span className="text-[7px] font-bold uppercase tracking-widest text-gray-100">instituto</span>
-                  <span className="text-[7px] font-bold uppercase tracking-widest text-gray-100">europeo de</span>
-                  <span className="text-[7px] font-bold uppercase tracking-widest text-gray-100">psicología</span>
-                  <span className="text-[7px] font-bold uppercase tracking-widest text-gray-100">positiva</span>
-                </div>
-              </div>
-
-              {/* LASALLE */}
-              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity shrink-0">
-                <div className="w-[20px] h-[20px] bg-white rounded-full mr-3"></div>
-                <div className="flex flex-col items-end">
-                  <span className="text-[28px] font-black tracking-tighter uppercase leading-none">LASALLE</span>
-                  <span className="text-[8px] font-medium tracking-[0.15em] uppercase mt-1 text-gray-200">centro universitario</span>
-                </div>
-              </div>
-
-              {/* Coaching Hall International */}
-              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity shrink-0">
-                <svg className="w-14 h-14 mr-3" viewBox="0 0 100 100" fill="none" stroke="currentColor">
-                  <path d="M 30 20 C 60 10 90 40 80 70 C 70 90 20 90 10 60 C 0 30 40 10 70 30" strokeWidth="3" opacity="0.5"/>
-                  <path d="M 15 40 C 30 20 70 10 85 30 C 100 50 80 80 60 85 C 40 90 10 70 15 40 Z" strokeWidth="4" opacity="0.7"/>
-                  <path d="M 25 60 C 15 40 40 20 65 25 C 90 30 95 60 80 80 C 65 100 35 80 25 60 Z" strokeWidth="5" opacity="0.9"/>
-                </svg>
-                <div className="flex flex-col text-left leading-tight">
-                  <span className="text-[13px] font-black tracking-widest uppercase">Coaching Hall</span>
-                  <span className="text-[8px] font-light tracking-[0.3em] uppercase mt-0.5 text-gray-200">International</span>
-                </div>
-              </div>
-              
+            <div className="w-full lg:w-2/3 py-2 px-6 flex items-center justify-center lg:justify-start">
+              <img 
+                src="/logos-partners.png" 
+                alt="Partners y certificaciones" 
+                className="w-full max-w-[600px] h-auto object-contain mix-blend-screen opacity-90 hover:opacity-100 transition-opacity"
+              />
             </div>
           </div>
         </div>
