@@ -44,13 +44,13 @@ export default function SocialSection() {
     <section className="relative w-full overflow-hidden border-b-2 border-[#FCD144]">
       {/* Background with blurry overlay and parallax effect */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-fixed grayscale opacity-25"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-fixed grayscale opacity-40"
         style={{ backgroundImage: 'url("/conference-bg.png")' }}
       />
-      <div className="absolute inset-0 z-10 bg-white/70 backdrop-blur-md" />
+      <div className="absolute inset-0 z-10 bg-white/40 backdrop-blur-sm" />
 
-      <div className="container mx-auto px-6 relative z-20">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+      <div className="container mx-auto px-6 max-w-5xl relative z-20">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
           
           {/* Text and Icons */}
           <div className="flex-1 py-12 md:py-20 text-center">
