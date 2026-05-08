@@ -45,6 +45,14 @@ const TESTIMONIALS: Testimonial[] = [
     country: "COLOMBIA",
     text: "Tuve la oportunidad de contar con Diego y su experiencia para alinear la estrategia comercial del año con nuestro equipo de promotores. Un espacio que no solo superó las expectativas de todos sino que permitió más allá de la teoría, generar una sinergia a nivel nacional con cada uno de los asistentes, un gran reto, teniendo en cuenta la virtualidad.\nDiego atendió y entendió desde el principio nuestra necesidad y construyó una propuesta disruptiva, incluyente y estratégica de alto impacto.",
     image: "/lina-sandoval.png"
+  },
+  {
+    id: 5,
+    name: "Luis Miguel Jaramillo",
+    role: "Presidente Red Iberoamérica de Jóvenes Lideres",
+    country: "COLOMBIA",
+    text: "He quedado impresionado positivamente y encantado de la energía y conexión que generó Diego con los participantes de nuestro mentorship. Fluido en su diálogo, flexible a las necesidades que tuvimos, claro y efectivo en el mensaje, actualizado con las tendencias. Recomiendo a Diego como un experto en liderazgo empresarial y liderazgo transformacional.",
+    image: "/luis-miguel.png"
   }
 ];
 
