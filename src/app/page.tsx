@@ -195,15 +195,15 @@ export default function LandingPage() {
       </section>
 
       {/* Ebook Gratuito Section */}
-      <section id="ebook" className="w-full bg-white relative overflow-hidden">
-        <div className="container mx-auto max-w-6xl px-6 py-16 md:py-24 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-8 relative z-10">
+      <section id="ebook" className="w-full bg-white relative overflow-hidden animate-fade-in-up">
+        <div className="container mx-auto max-w-6xl px-6 py-6 md:py-10 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-8 relative z-10">
           
           {/* Ebook Image */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pr-4">
             <img 
-              src="/ebook-cover-2.jpg" 
+              src="/ebook-cover-transparent.png" 
               alt="Rompe Tus Limites - Ebook Gratuito" 
-              className="w-full max-w-[320px] md:max-w-[400px] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)]"
+              className="w-full max-w-[280px] md:max-w-[350px] object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)]"
             />
           </div>
 
