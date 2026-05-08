@@ -196,10 +196,10 @@ export default function LandingPage() {
 
       {/* Ebook Gratuito Section */}
       <section id="ebook" className="w-full bg-white relative overflow-hidden animate-fade-in-up">
-        <div className="container mx-auto max-w-6xl px-6 py-6 md:py-10 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-8 relative z-10">
+        <div className="container mx-auto max-w-6xl px-6 py-6 md:py-10 flex flex-col lg:flex-row items-center justify-start gap-10 lg:gap-16 relative z-10">
           
           {/* Ebook Image */}
-          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:pr-12">
+          <div className="w-full lg:w-5/12 flex justify-center lg:justify-start lg:pl-0">
             <img 
               src="/ebook-cover-transparent.png" 
               alt="Rompe Tus Limites - Ebook Gratuito" 
@@ -208,7 +208,7 @@ export default function LandingPage() {
           </div>
 
           {/* Ebook Content */}
-          <div className="w-full lg:w-5/12 flex flex-col items-center lg:items-start text-center lg:text-left lg:-ml-12">
+          <div className="w-full lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left lg:-ml-4">
             <h2 className="text-[#13253F] text-[26px] md:text-[32px] font-bold mb-10 w-full text-center">
               Ebook Gratuito
             </h2>
