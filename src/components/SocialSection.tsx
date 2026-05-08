@@ -42,12 +42,12 @@ export default function SocialSection() {
 
   return (
     <section className="relative w-full overflow-hidden border-b-2 border-[#FCD144]">
-      {/* Background with blurry overlay */}
+      {/* Background with blurry overlay and parallax effect */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center grayscale opacity-20"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-fixed grayscale opacity-25"
         style={{ backgroundImage: 'url("/conference-bg.png")' }}
       />
-      <div className="absolute inset-0 z-10 bg-white/80 backdrop-blur-sm" />
+      <div className="absolute inset-0 z-10 bg-white/70 backdrop-blur-md" />
 
       <div className="container mx-auto px-6 relative z-20">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
