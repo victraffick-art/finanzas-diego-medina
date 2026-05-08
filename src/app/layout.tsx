@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Proyecto Finanzas - Diego Medina",
-  description: "Controlador de ingresos y egresos personales",
+  title: "Diego Medina | Desarrollo para el Alto Rendimiento",
+  description: "Mentoring y Coaching Personal y Empresarial",
 };
 
 export default function RootLayout({
@@ -15,10 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark">
-      <body
-        className={`${inter.variable} font-sans antialiased bg-zinc-950 text-zinc-50`}
-      >
+    <html lang="es" className="scroll-smooth">
+      <body className={`${montserrat.variable} font-sans antialiased bg-[#13253F] text-white`}>
         {children}
       </body>
     </html>

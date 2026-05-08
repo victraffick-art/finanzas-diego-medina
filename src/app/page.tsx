@@ -164,12 +164,41 @@ export default function LandingPage() {
             {/* Spacer for Desktop Image */}
             <div className="hidden lg:block lg:w-1/3"></div>
             
-            <div className="w-full lg:w-2/3 py-2 px-6 flex items-center justify-center lg:justify-start">
-              <img 
-                src="/logos-partners.png" 
-                alt="Partners y certificaciones" 
-                className="w-full max-w-[600px] h-auto object-contain opacity-90"
-              />
+            <div className="w-full lg:w-2/3 py-3 px-6 flex flex-row flex-nowrap items-center justify-between gap-4 overflow-x-auto scrollbar-hide">
+              {/* Logos clonados desde la imagen original */}
+              <div className="flex items-center text-white gap-2 opacity-90 hover:opacity-100 transition-opacity whitespace-nowrap shrink-0">
+                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6.5 13h-13L12 6z"/></svg>
+                <div className="flex flex-col leading-none">
+                  <span className="text-[12px] font-bold tracking-widest uppercase">Maxwell</span>
+                  <span className="text-[8px] font-light tracking-[0.25em] uppercase mt-0.5">Leadership</span>
+                </div>
+              </div>
+
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity whitespace-nowrap shrink-0">
+                <span className="text-[24px] font-black tracking-tight leading-none">IEPP</span>
+                <div className="flex flex-col ml-2 leading-[1.1]">
+                  <span className="text-[5px] font-bold uppercase tracking-wider">instituto</span>
+                  <span className="text-[5px] font-bold uppercase tracking-wider">europeo de</span>
+                  <span className="text-[5px] font-bold uppercase tracking-wider">psicología</span>
+                  <span className="text-[5px] font-bold uppercase tracking-wider">positiva</span>
+                </div>
+              </div>
+
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity gap-2 whitespace-nowrap shrink-0">
+                <div className="w-2 h-2 bg-white rounded-full"></div>
+                <div className="flex flex-col leading-none">
+                  <span className="text-[16px] font-black tracking-tighter uppercase">LASALLE</span>
+                  <span className="text-[6px] font-medium tracking-[0.15em] uppercase mt-0.5">centro universitario</span>
+                </div>
+              </div>
+
+              <div className="flex items-center text-white opacity-90 hover:opacity-100 transition-opacity whitespace-nowrap shrink-0">
+                 <svg className="w-6 h-6 fill-current mr-2" viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
+                 <div className="flex flex-col leading-none">
+                   <span className="text-[10px] font-bold tracking-widest uppercase">Coaching Hall</span>
+                   <span className="text-[6px] font-light tracking-[0.2em] uppercase mt-0.5">International</span>
+                 </div>
+              </div>
             </div>
           </div>
         </div>

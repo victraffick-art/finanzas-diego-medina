@@ -1,25 +1,44 @@
 [
   {
-    "route": "/",
-    "firstLoadUncompressedJsBytes": 777629,
+    "route": "/dashboard",
+    "firstLoadUncompressedJsBytes": 778345,
     "firstLoadChunkPaths": [
-      ".next\\static\\chunks\\0dbhjjzl8qfwv.js",
-      ".next\\static\\chunks\\0.oml0r.47k9u.js",
+      ".next\\static\\chunks\\01xlw8hd842-c.js",
+      ".next\\static\\chunks\\0d3shmwh5_nmn.js",
+      ".next\\static\\chunks\\0j5bsa77q9lp~.js",
+      ".next\\static\\chunks\\06eyf_iqidt_7.js",
       ".next\\static\\chunks\\0ht900cau6_ur.js",
-      ".next\\static\\chunks\\15qr9l2igdb_z.js",
+      ".next\\static\\chunks\\0dgq26a5_oy.a.js",
       ".next\\static\\chunks\\0n~dq4kpx9xxx.js",
-      ".next\\static\\chunks\\turbopack-0rmbd~rauw88t.js"
+      ".next\\static\\chunks\\0mu6w5jq7x8v_.js",
+      ".next\\static\\chunks\\turbopack-0x910pci0gng~.js"
+    ]
+  },
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 520872,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\01xlw8hd842-c.js",
+      ".next\\static\\chunks\\0d3shmwh5_nmn.js",
+      ".next\\static\\chunks\\0ucijdf6i13b8.js",
+      ".next\\static\\chunks\\0ht900cau6_ur.js",
+      ".next\\static\\chunks\\0dgq26a5_oy.a.js",
+      ".next\\static\\chunks\\0n~dq4kpx9xxx.js",
+      ".next\\static\\chunks\\0mu6w5jq7x8v_.js",
+      ".next\\static\\chunks\\turbopack-0x910pci0gng~.js"
     ]
   },
   {
     "route": "/_not-found",
-    "firstLoadUncompressedJsBytes": 513586,
+    "firstLoadUncompressedJsBytes": 513847,
     "firstLoadChunkPaths": [
-      ".next\\static\\chunks\\0dbhjjzl8qfwv.js",
+      ".next\\static\\chunks\\01xlw8hd842-c.js",
+      ".next\\static\\chunks\\0d3shmwh5_nmn.js",
       ".next\\static\\chunks\\0ht900cau6_ur.js",
-      ".next\\static\\chunks\\15qr9l2igdb_z.js",
+      ".next\\static\\chunks\\0dgq26a5_oy.a.js",
       ".next\\static\\chunks\\0n~dq4kpx9xxx.js",
-      ".next\\static\\chunks\\turbopack-0rmbd~rauw88t.js"
+      ".next\\static\\chunks\\0mu6w5jq7x8v_.js",
+      ".next\\static\\chunks\\turbopack-0x910pci0gng~.js"
     ]
   }
 ]
