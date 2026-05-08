@@ -166,9 +166,9 @@ export default function LandingPage() {
             
             <div className="w-full lg:w-2/3 py-2 px-6 flex items-center justify-center lg:justify-start">
               <img 
-                src="/logos-partners.png" 
+                src="/logos-partners-blue.png" 
                 alt="Partners y certificaciones" 
-                className="w-full max-w-[600px] h-auto object-contain mix-blend-screen opacity-90 hover:opacity-100 transition-opacity"
+                className="w-full max-w-[600px] h-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
               />
             </div>
           </div>
