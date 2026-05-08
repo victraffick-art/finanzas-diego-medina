@@ -29,6 +29,14 @@ const TESTIMONIALS: Testimonial[] = [
     country: "COLOMBIA",
     text: "Si estás buscando fortalecer tu liderazgo y las competencias de tu Equipo de Trabajo, Diego es la Persona Indicada para ello. Conté con la Oportunidad de conocer y conectar con Diego a partir de un taller de Liderazgo organizado por la Red Conecta Iberoamérica, en el cual logramos identificar y desbloquear limitantes propios y del entorno que no nos permitían crecer como personas y por lo tanto desarrollar un verdadero liderazgo.\nDestaco su metodología, experiencia y orientación, la cual facilita el proceso y permite resultados concretos para quienes se atreven a llevar su propio proceso de transformación al siguiente nivel. Muchas Gracias Diego.",
     image: "/luis-felipe.png"
+  },
+  {
+    id: 3,
+    name: "Carolina Montero C.",
+    role: "Directora de Doctorados e Innovación en Universidad Central de Ecuador",
+    country: "ECUADOR",
+    text: "Gracias Diego por las excelentes charlas y mentorías que nos has dado a lo largo de este tiempo, que sin duda nos han permitido hacer nuestro propios auto-feedback de cómo podemos mejorar y cómo podemos llevar mejor adelante a nuestros equipos.",
+    image: "/carolina-montero.png"
   }
 ];
 
