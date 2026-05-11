@@ -64,36 +64,47 @@ export default function LandingPage() {
           <div className="absolute inset-0 bg-white/50"></div>
         </div>
 
-        <div className="container mx-auto px-6 md:px-16 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[85vh]">
+        <div className="container mx-auto px-6 md:px-16 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 items-center min-h-[85vh] py-12 lg:py-0">
           
-          {/* Left Side: Character Image (Diego) - Slightly smaller scale */}
-          <div className="lg:col-span-5 h-full flex items-end justify-center lg:justify-start relative">
+          {/* Text Content - Title is order-1 on mobile, P is order-3 */}
+          <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full">
+            <div className="max-w-3xl">
+              <h1 className="text-[#13253F] leading-[1.05] tracking-tight mb-8 lg:mb-12 text-center lg:text-left order-1">
+                <span className="block font-extrabold text-[40px] md:text-[56px] lg:text-[76px]">Transforma tu liderazgo</span>
+                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">y alcanza resultados</span>
+                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">exponenciales</span>
+              </h1>
+              
+              {/* Image for Mobile Only - Order 2 */}
+              <div className="lg:hidden flex justify-center mb-10 order-2">
+                <img 
+                  src="/diego-hero.png" 
+                  alt="Diego Medina" 
+                  className="w-full max-w-[300px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.12)]"
+                />
+              </div>
+              
+              <div className="relative inline-block w-full lg:w-auto order-3">
+                {/* Yellow Highlight Bar */}
+                <div className="absolute inset-y-0 -left-6 -right-12 bg-gradient-to-r from-[#F7C34D]/70 via-[#F7C34D]/50 to-transparent z-0 transform -skew-x-12 rounded-l-md hidden lg:block"></div>
+                {/* Mobile version of yellow highlight - simpler and centered */}
+                <div className="absolute inset-0 bg-[#F7C34D]/30 lg:hidden z-0 rounded-xl"></div>
+                
+                <p className="relative z-10 text-[18px] md:text-[24px] text-[#13253F] font-medium py-4 lg:py-3 px-6 lg:px-0 leading-relaxed text-center lg:text-left">
+                  Te ayudo a desarrollar un <span className="font-bold border-b-4 border-[#13253F]/10">liderazgo estratégico</span> que acelere tus resultados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Character Image for Desktop Only - Order 1 */}
+          <div className="hidden lg:flex lg:col-span-5 h-full items-end justify-center lg:justify-start relative lg:order-1">
             <div className="relative w-full max-w-[600px] h-[750px] lg:h-[90vh] flex items-end -mb-4 scale-100 origin-bottom">
               <img 
                 src="/diego-hero.png" 
                 alt="Diego Medina" 
                 className="w-full h-full object-contain object-bottom drop-shadow-[0_20px_50px_rgba(0,0,0,0.12)] z-20"
               />
-            </div>
-          </div>
-
-          {/* Right Side: Text Content */}
-          <div className="lg:col-span-7 py-12 lg:py-0 flex flex-col justify-center relative z-30">
-            <div className="max-w-3xl">
-              <h1 className="text-[#13253F] leading-[1.05] tracking-tight mb-12">
-                <span className="block font-extrabold text-[40px] md:text-[56px] lg:text-[76px]">Transforma tu liderazgo</span>
-                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">y alcanza resultados</span>
-                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">exponenciales</span>
-              </h1>
-              
-              <div className="relative inline-block">
-                {/* Yellow Highlight Bar - More vibrant and precise */}
-                <div className="absolute inset-y-0 -left-6 -right-12 bg-gradient-to-r from-[#F7C34D]/70 via-[#F7C34D]/50 to-transparent z-0 transform -skew-x-12 rounded-l-md"></div>
-                
-                <p className="relative z-10 text-[20px] md:text-[24px] text-[#13253F] font-medium py-3 leading-relaxed">
-                  Te ayudo a desarrollar un <span className="font-bold border-b-4 border-[#13253F]/10">liderazgo estratégico</span> que acelere tus resultados.
-                </p>
-              </div>
             </div>
           </div>
         </div>
