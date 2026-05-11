@@ -8,6 +8,13 @@ import Footer from "@/components/Footer";
  * Includes Hero, About, Ebook, Testimonials and Social sections.
  * Updated: 2026-05-11
  */
+export const metadata = {
+  title: 'Diego Medina | Liderazgo Exponencial',
+  description: 'Programa de liderazgo estratégico y mentalidad de alto desempeño.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  version: '1.0.6'
+}
+
 export default function LandingPage() {
   return (
     <main className="min-h-screen bg-white">
