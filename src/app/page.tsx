@@ -30,14 +30,14 @@ export default function LandingPage() {
         {/* Logo Section */}
         <div className="flex flex-col">
           <div className="flex items-baseline tracking-tight">
-            <span className="font-bold text-[#FFFFFF]" style={{ fontSize: 'min(24px, 6vw)' }}>Dieg</span>
-            <span className="relative inline-block font-bold text-[#FFFFFF]" style={{ fontSize: 'min(24px, 6vw)' }}>
+            <span className="font-bold text-[#FFFFFF] text-2xl md:text-3xl">Dieg</span>
+            <span className="relative inline-block font-bold text-[#FFFFFF] text-2xl md:text-3xl">
               o
               <span className="absolute left-[50%] top-[55%] -translate-x-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-[#00AEEF] rounded-full"></span>
             </span>
-            <span className="font-extralight ml-2 text-[#FFFFFF]" style={{ fontSize: 'min(24px, 6vw)' }}>Medina</span>
+            <span className="font-extralight ml-2 text-[#FFFFFF] text-2xl md:text-3xl">Medina</span>
           </div>
-          <span className="uppercase tracking-[0.15em] font-medium text-gray-300 -mt-1 leading-tight" style={{ fontSize: '9px' }}>
+          <span className="text-[9px] md:text-[11px] uppercase tracking-[0.15em] font-medium text-gray-300 -mt-1 leading-tight">
             Liderazgo para el alto desempeño
           </span>
         </div>
@@ -90,17 +90,17 @@ export default function LandingPage() {
           <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full mt-2 lg:mt-0">
             <div className="max-w-3xl flex flex-col items-center lg:items-start">
               <h1 className="text-[#13253F] tracking-tight mb-4 lg:mb-12 text-center lg:text-left order-1">
-                <span className="block font-extrabold" style={{ fontSize: 'min(28px, 8vw)', lineHeight: '1.4', marginBottom: '4px' }}>Transforma tu liderazgo</span>
-                <span className="block font-light" style={{ fontSize: 'min(24px, 7vw)', lineHeight: '1.4' }}>y alcanza resultados</span>
-                <span className="block font-light" style={{ fontSize: 'min(24px, 7vw)', lineHeight: '1.4' }}>exponenciales</span>
+                <span className="block font-extrabold text-2xl md:text-5xl lg:text-[76px] leading-tight lg:leading-[1.05]">Transforma tu liderazgo</span>
+                <span className="block font-light text-xl md:text-4xl lg:text-[64px] -mt-1 leading-tight lg:leading-[1.05]">y alcanza resultados</span>
+                <span className="block font-light text-xl md:text-4xl lg:text-[64px] -mt-1 leading-tight lg:leading-[1.05]">exponenciales</span>
               </h1>
               
               {/* Image for Mobile Only - Order 2 */}
-              <div className="lg:hidden flex justify-center order-2 w-full my-4">
+              <div className="lg:hidden flex justify-center order-2 w-full my-6">
                 <img 
                   src="/diego-hero.png" 
                   alt="Diego Medina" 
-                  className="w-full max-w-[280px] h-auto object-contain drop-shadow-xl -mb-4"
+                  className="w-full max-w-[320px] h-auto object-contain drop-shadow-xl"
                 />
               </div>
               
@@ -112,8 +112,8 @@ export default function LandingPage() {
                 <div className="absolute inset-0 bg-[#F7C34D]/80 lg:hidden z-0 rounded-[40px] blur-xl opacity-60"></div>
                 <div className="absolute inset-x-2 inset-y-1 bg-[#F7C34D]/90 lg:hidden z-0 rounded-xl shadow-sm"></div>
                 
-                <p className="relative z-10 text-[#13253F] font-bold py-4 lg:py-3 px-6 lg:px-0 leading-relaxed text-center lg:text-left" style={{ fontSize: '16px' }}>
-                  Te ayudo a desarrollar un <span className="font-extrabold border-b-2 border-[#13253F]/20">liderazgo estratégico</span> que acelere tus resultados.
+                <p className="relative z-10 text-[18px] lg:text-[24px] text-[#13253F] font-bold py-4 lg:py-3 px-6 lg:px-0 leading-relaxed text-center lg:text-left">
+                  Te ayudo a desarrollar un <span className="font-extrabold border-b-2 lg:border-b-4 border-[#13253F]/20">liderazgo estratégico</span> que acelere tus resultados.
                 </p>
               </div>
             </div>
