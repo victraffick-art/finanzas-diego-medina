@@ -87,3 +87,48 @@ body {
   }
 }
 
+/* Interactive UI Effects */
+.btn-premium {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-premium:active {
+  transform: translateY(1px) scale(0.97);
+  filter: brightness(0.9);
+}
+
+.nav-link-premium {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link-premium::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #FCD144;
+  transition: width 0.3s ease;
+}
+
+.nav-link-premium:hover {
+  color: #FCD144 !important;
+}
+
+.nav-link-premium:hover::after {
+  width: 100%;
+}
+
+.nav-link-premium:active {
+  transform: scale(0.95);
+}

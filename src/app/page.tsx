@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 /**
  * Main Landing Page Component
  * Includes Hero, About, Ebook, Testimonials and Social sections.
- * Updated: 2026-05-11
+ * Updated: 2026-05-11 - Final Interactive Version
  */
 export const viewport = {
   width: 'device-width',
@@ -18,7 +18,7 @@ export const metadata = {
   title: 'Diego Medina | Liderazgo Exponencial',
   description: 'Programa de liderazgo estratégico y mentalidad de alto desempeño.',
   other: {
-    version: '1.0.8'
+    version: '1.0.9'
   }
 }
 
@@ -26,7 +26,7 @@ export default function LandingPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Top Blue Banner (Header) */}
-      <header className="bg-[#13253F] text-white py-4 px-6 md:px-16 flex justify-between items-center shadow-lg">
+      <header className="bg-[#13253F] text-white py-4 px-6 md:px-16 flex justify-between items-center shadow-lg sticky top-0 z-50">
         {/* Logo Section */}
         <div className="flex flex-col">
           <div className="flex items-baseline tracking-tight">
@@ -43,22 +43,12 @@ export default function LandingPage() {
         </div>
 
         {/* Navigation Menu */}
-        <nav className="hidden lg:flex items-center gap-10">
-          {[
-            { label: "INICIO", href: "/#inicio" },
-            { label: "SOBRE MÍ", href: "/#sobre-mi" },
-            { label: "EVENTO", href: "/#evento" },
-            { label: "EBOOK", href: "/#ebook" },
-            { label: "RECURSOS", href: "/#recursos" }
-          ].map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-[13px] font-bold tracking-widest hover:text-[#00AEEF] transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
+        <nav className="hidden lg:flex space-x-8">
+          <a href="#inicio" className="nav-link-premium text-white font-medium text-sm tracking-widest">INICIO</a>
+          <a href="#sobre-mi" className="nav-link-premium text-white font-medium text-sm tracking-widest">SOBRE MÍ</a>
+          <a href="#ebook" className="nav-link-premium text-white font-medium text-sm tracking-widest">EBOOK</a>
+          <a href="#recursos" className="nav-link-premium text-white font-medium text-sm tracking-widest">RECURSOS</a>
+          <a href="#evento" className="nav-link-premium text-white font-medium text-sm tracking-widest">EVENTO</a>
         </nav>
 
         {/* Mobile Menu Button (Placeholder) */}
@@ -86,7 +76,7 @@ export default function LandingPage() {
 
         <div className="container mx-auto px-4 md:px-16 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-16 items-center min-h-0 lg:min-h-[85vh] py-8 lg:py-0">
           
-          {/* Text Content - Title is order-1 on mobile, P is order-3 */}
+          {/* Text Content */}
           <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full mt-2 lg:mt-0">
             <div className="max-w-3xl flex flex-col items-center lg:items-start">
               <h1 className="text-[#13253F] tracking-tight mb-4 lg:mb-12 text-center lg:text-left order-1">
@@ -95,7 +85,7 @@ export default function LandingPage() {
                 <span className="block font-light text-xl md:text-4xl lg:text-[64px] -mt-1 leading-tight lg:leading-[1.05]">exponenciales</span>
               </h1>
               
-              {/* Image for Mobile Only - Order 2 */}
+              {/* Image for Mobile Only */}
               <div className="lg:hidden flex justify-center order-2 w-full my-6">
                 <img 
                   src="/diego-hero.png" 
@@ -108,7 +98,7 @@ export default function LandingPage() {
                 {/* Yellow Highlight Bar (Desktop) */}
                 <div className="absolute inset-y-0 -left-6 -right-12 bg-gradient-to-r from-[#F7C34D]/70 via-[#F7C34D]/50 to-transparent z-0 transform -skew-x-12 rounded-l-md hidden lg:block"></div>
                 
-                {/* Mobile version of yellow highlight - Diffused/Blurred effect */}
+                {/* Mobile version of yellow highlight */}
                 <div className="absolute inset-0 bg-[#F7C34D]/80 lg:hidden z-0 rounded-[40px] blur-xl opacity-60"></div>
                 <div className="absolute inset-x-2 inset-y-1 bg-[#F7C34D]/90 lg:hidden z-0 rounded-xl shadow-sm"></div>
                 
@@ -116,10 +106,26 @@ export default function LandingPage() {
                   Te ayudo a desarrollar un <span className="font-extrabold border-b-2 lg:border-b-4 border-[#13253F]/20">liderazgo estratégico</span> que acelere tus resultados.
                 </p>
               </div>
+
+              {/* CTA Buttons in Hero */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start order-4 mt-12 w-full lg:w-auto">
+                <a 
+                  href="#evento" 
+                  className="btn-premium bg-[#F7C34D] text-[#13253F] px-8 py-4 rounded-full font-bold text-lg shadow-lg flex items-center justify-center gap-2"
+                >
+                  Saber más del Programa
+                </a>
+                <a 
+                  href="#ebook" 
+                  className="btn-premium border-2 border-[#13253F] text-[#13253F] px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2"
+                >
+                  Descargar Ebook Gratis
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Character Image for Desktop Only - Order 1 */}
+          {/* Character Image for Desktop Only */}
           <div className="hidden lg:flex lg:col-span-5 h-full items-end justify-center lg:justify-start relative lg:order-1">
             <div className="relative w-full max-w-[600px] h-[750px] lg:h-[90vh] flex items-end -mb-4 scale-100 origin-bottom">
               <img 
@@ -132,7 +138,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Quote Section - Minimal Padding */}
+      {/* Quote Section */}
       <section className="bg-white py-8 md:py-10 px-6 relative z-30">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-[18px] md:text-[24px] lg:text-[28px] font-medium text-[#13253F] leading-tight tracking-normal">
@@ -178,7 +184,7 @@ export default function LandingPage() {
 
         <div className="container mx-auto px-6 md:px-16 relative z-10 flex flex-col items-center">
           
-          {/* 1. Title - Top on Mobile and Desktop */}
+          {/* 1. Title */}
           <div className="w-full text-center lg:text-left mb-8">
             <h2 className="text-[32px] md:text-[56px] font-extrabold text-[#13253F] leading-tight">
               ¡Hola! Soy Diego Medina
@@ -186,7 +192,7 @@ export default function LandingPage() {
           </div>
 
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
-            {/* 2. Image - Order 1 on Mobile, Right on Desktop */}
+            {/* 2. Image */}
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative w-full">
               <div className="relative w-full max-w-[400px] lg:max-w-[500px] aspect-[4/5] lg:h-[75vh] flex items-end">
                 <img 
@@ -197,7 +203,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* 3. Text - Order 2 on Mobile, Left on Desktop */}
+            {/* 3. Text */}
             <div className="order-2 lg:order-1 relative z-20 w-full">
               <div className="space-y-6 text-gray-700 text-base md:text-xl leading-relaxed max-w-xl text-justify lg:text-left">
                 <p>
@@ -217,7 +223,7 @@ export default function LandingPage() {
           </div>
         </div>
 
-        {/* 4. Banner Slide - Bottom of Section */}
+        {/* 4. Banner Slide */}
         <div className="w-full bg-[#1c2f42] relative z-20 overflow-hidden mt-12">
           <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row">
             {/* Spacer for Desktop Layout */}
@@ -243,8 +249,8 @@ export default function LandingPage() {
       </section>
 
       {/* Ebook Gratuito Section */}
-      <section id="ebook" className="w-full bg-white relative overflow-hidden animate-fade-in-up">
-        <div className="container mx-auto max-w-6xl px-6 py-6 md:py-10 flex flex-col lg:flex-row items-center justify-start gap-10 lg:gap-16 relative z-10">
+      <section id="ebook" className="w-full bg-white relative overflow-hidden">
+        <div className="container mx-auto max-w-6xl px-6 py-12 md:py-20 flex flex-col lg:flex-row items-center justify-start gap-10 lg:gap-16 relative z-10">
           
           {/* Ebook Image */}
           <div className="w-full lg:w-5/12 flex justify-center lg:justify-start lg:pl-0">
@@ -256,7 +262,7 @@ export default function LandingPage() {
           </div>
 
           {/* Ebook Content */}
-          <div className="w-full lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left lg:-ml-4">
+          <div className="w-full lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left">
             <h2 className="text-[#13253F] text-[26px] md:text-[32px] font-bold mb-10 w-full text-center">
               Ebook Gratuito
             </h2>
@@ -273,9 +279,9 @@ export default function LandingPage() {
               En esta ligera guía está lo que creo que será una de las cosas mas importantes que jamás aprenderás. ¡Lo sé! Suena demasiado bueno para ser verdad, sin embargo léelo hasta el final, no te tomará más de 15 minutos. ¿Qué tanto puedes perder?
             </p>
             
-            <div className="w-full flex justify-center lg:justify-start lg:pr-8">
+            <div className="w-full flex justify-center lg:justify-start">
               <Link href="/descargar-ebook">
-                <button className="bg-[#FCD144] hover:bg-[#ffde6a] text-[#13253F] font-bold text-[14px] md:text-[15px] tracking-wide px-10 py-4 rounded-full transition-colors duration-300 shadow-md cursor-pointer">
+                <button className="btn-premium bg-[#FCD144] text-[#13253F] font-bold text-[14px] md:text-[15px] tracking-wide px-10 py-4 rounded-full shadow-md">
                   DESCÁRGALO GRATIS
                 </button>
               </Link>
