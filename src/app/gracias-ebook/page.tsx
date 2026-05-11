@@ -64,7 +64,7 @@ export default function GraciasEbook() {
                 </p>
 
                 <Link 
-                  href="#" /* El link se actualizará luego */
+                  href="https://chat.whatsapp.com/GsXP4i0rhVQ01KiGnp9Kkp?mblist_uid=64b1771bb8c3c&mbsubscriber_uid=69fe4c4460cdf"
                   target="_blank"
                   className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20ba5a] text-white font-black text-base md:text-lg tracking-wide px-8 md:px-12 py-5 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-[0_10px_30px_rgba(37,211,102,0.3)] group"
                 >
