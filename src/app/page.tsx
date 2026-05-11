@@ -172,48 +172,45 @@ export default function LandingPage() {
       </section>
 
       {/* About Me Section */}
-      <section id="sobre-mi" className="relative w-full overflow-hidden bg-white">
+      <section id="sobre-mi" className="relative w-full overflow-hidden bg-white flex flex-col">
         {/* Background Image Container */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
           style={{ backgroundImage: "url('/conference-bg.png')" }}
         >
-          {/* Overlay */}
           <div className="absolute inset-0 bg-white/85"></div>
         </div>
 
-        <div className="container mx-auto px-6 md:px-16 relative z-10 py-12 lg:py-20">
-          <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        {/* Content Grid - NO bottom padding so image touches the bar */}
+        <div className="container mx-auto px-6 md:px-16 relative z-10 pt-12 lg:pt-20 pb-0 flex-1">
+          <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-12 lg:items-end h-full">
             
-            {/* Title - Top on mobile */}
+            {/* Title - Top on mobile only */}
             <div className="w-full lg:hidden text-center mb-4">
               <h2 className="text-[32px] font-extrabold text-[#13253F] leading-tight">
                 ¡Hola! Soy Diego Medina
               </h2>
             </div>
 
-            {/* Image Section - Left on desktop (col-span-5) */}
-            <div className="order-1 lg:col-span-5 flex justify-center lg:justify-start items-end relative">
-              <div className="relative w-full max-w-[380px] lg:max-w-none lg:w-[130%] lg:-ml-16">
+            {/* Image - Left on desktop, bottom-aligned so it sits flush on the logo bar */}
+            <div className="order-1 lg:col-span-5 flex justify-center lg:justify-start items-end self-end">
+              <div className="relative w-full max-w-[340px] lg:max-w-none lg:w-[130%] lg:-ml-16">
                 <img 
                   src="/diego-about.png" 
                   alt="Diego Medina" 
-                  className="w-full h-auto object-contain drop-shadow-2xl z-10"
+                  className="w-full h-auto object-contain object-bottom drop-shadow-2xl"
                 />
               </div>
             </div>
 
-            {/* Text Content - Right on desktop (col-span-7) */}
-            <div className="order-2 lg:col-span-7 flex flex-col justify-center">
-              {/* Desktop Title */}
+            {/* Text Content - Right on desktop */}
+            <div className="order-2 lg:col-span-7 flex flex-col justify-center pb-12">
               <h2 className="hidden lg:block text-[42px] font-extrabold text-[#13253F] leading-tight mb-8 text-center">
                 ¡Hola! Soy Diego Medina
               </h2>
               
               <div className="space-y-6 text-[#13253F] text-lg md:text-xl leading-relaxed text-justify lg:text-left">
-                <p>
-                  He dedicado gran parte de mi vida a intentar ser un líder más auténtico.
-                </p>
+                <p>He dedicado gran parte de mi vida a intentar ser un líder más auténtico.</p>
                 <p>
                   Soy coach, speaker y entrenador en liderazgo y desarrollo personal para el alto rendimiento, partner del <span className="font-bold">Maxwell Leadership®</span>.
                 </p>
@@ -228,10 +225,19 @@ export default function LandingPage() {
           </div>
         </div>
 
-        {/* Logos Banner - Exactly like the image */}
-        <div className="w-full bg-[#13253F] relative z-20 py-6 border-t-4 border-[#FCD144]">
-          <div className="container mx-auto px-6 flex flex-wrap justify-center items-center gap-10 md:gap-20">
-            <img src="/logos-partners-white.png" alt="Maxwell Leadership, IEPP, LASALLE, Coaching Hall" className="h-10 md:h-16 lg:h-20 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+        {/* Logos Auto-Scroll Banner */}
+        <div className="w-full bg-[#13253F] relative z-20 py-5 border-t-4 border-[#FCD144] overflow-hidden">
+          <div className="flex items-center w-max animate-marquee">
+            <img
+              src="/logos-partners-white.png"
+              alt="Partners: Maxwell Leadership, IEPP, LASALLE, Coaching Hall"
+              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16"
+            />
+            <img
+              src="/logos-partners-white.png"
+              alt="Partners: Maxwell Leadership, IEPP, LASALLE, Coaching Hall"
+              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16"
+            />
           </div>
         </div>
       </section>
