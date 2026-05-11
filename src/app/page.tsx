@@ -229,17 +229,18 @@ export default function LandingPage() {
         <div className="w-full bg-[#13253F] relative z-20 py-5 border-t-4 border-[#FCD144] overflow-hidden">
           <div className="flex items-center w-max animate-marquee">
             <img
-              src="/logos-partners-white.png"
+              src="/logos-partners-blue.png"
               alt="Partners: Maxwell Leadership, IEPP, LASALLE, Coaching Hall"
-              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16"
+              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16 brightness-0 invert"
             />
             <img
-              src="/logos-partners-white.png"
+              src="/logos-partners-blue.png"
               alt="Partners: Maxwell Leadership, IEPP, LASALLE, Coaching Hall"
-              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16"
+              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16 brightness-0 invert"
             />
           </div>
         </div>
+
       </section>
 
       {/* Ebook Gratuito Section */}
