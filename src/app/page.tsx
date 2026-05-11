@@ -29,10 +29,15 @@ export default function LandingPage() {
       <header className="bg-[#13253F] text-white py-4 px-6 md:px-16 flex justify-between items-center shadow-lg">
         {/* Logo Section */}
         <div className="flex flex-col">
-          <div className="flex items-baseline text-2xl md:text-3xl tracking-tight">
-            <span className="font-bold text-[#FFFFFF]">Dieg</span><span className="relative inline-block font-bold text-[#FFFFFF]">o<span className="absolute left-[50%] top-[55%] -translate-x-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-[#00AEEF] rounded-full"></span></span><span className="font-extralight ml-2 text-[#FFFFFF]">Medina</span>
+          <div className="flex items-baseline tracking-tight">
+            <span className="font-bold text-[#FFFFFF]" style={{ fontSize: 'min(24px, 6vw)' }}>Dieg</span>
+            <span className="relative inline-block font-bold text-[#FFFFFF]" style={{ fontSize: 'min(24px, 6vw)' }}>
+              o
+              <span className="absolute left-[50%] top-[55%] -translate-x-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-[#00AEEF] rounded-full"></span>
+            </span>
+            <span className="font-extralight ml-2 text-[#FFFFFF]" style={{ fontSize: 'min(24px, 6vw)' }}>Medina</span>
           </div>
-          <span className="text-[9px] md:text-[11px] uppercase tracking-[0.15em] font-medium text-gray-300 -mt-1 leading-tight">
+          <span className="uppercase tracking-[0.15em] font-medium text-gray-300 -mt-1 leading-tight" style={{ fontSize: '9px' }}>
             Liderazgo para el alto desempeño
           </span>
         </div>
@@ -79,23 +84,23 @@ export default function LandingPage() {
           <div className="absolute inset-0 bg-white/50"></div>
         </div>
 
-        <div className="container mx-auto px-6 md:px-16 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 items-center min-h-[50vh] lg:min-h-[85vh] py-12 lg:py-0">
+        <div className="container mx-auto px-4 md:px-16 relative z-10 flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-16 items-center min-h-0 lg:min-h-[85vh] py-8 lg:py-0">
           
           {/* Text Content - Title is order-1 on mobile, P is order-3 */}
-          <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full mt-4 lg:mt-0">
-            <div className="max-w-3xl flex flex-col items-center">
-              <h1 className="text-[#13253F] tracking-tight mb-4 lg:mb-12 text-center lg:text-left order-1 px-2">
-                <span className="block font-extrabold hero-title-mobile">Transforma tu liderazgo</span>
-                <span className="block font-light hero-subtitle-mobile -mt-1">y alcanza resultados</span>
-                <span className="block font-light hero-subtitle-mobile -mt-1">exponenciales</span>
+          <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full mt-2 lg:mt-0">
+            <div className="max-w-3xl flex flex-col items-center lg:items-start">
+              <h1 className="text-[#13253F] tracking-tight mb-4 lg:mb-12 text-center lg:text-left order-1">
+                <span className="block font-extrabold" style={{ fontSize: 'min(28px, 7vw)', lineHeight: '1.2' }}>Transforma tu liderazgo</span>
+                <span className="block font-light -mt-1" style={{ fontSize: 'min(24px, 6vw)', lineHeight: '1.2' }}>y alcanza resultados</span>
+                <span className="block font-light -mt-1" style={{ fontSize: 'min(24px, 6vw)', lineHeight: '1.2' }}>exponenciales</span>
               </h1>
               
               {/* Image for Mobile Only - Order 2 */}
-              <div className="lg:hidden flex justify-center order-2 w-full">
+              <div className="lg:hidden flex justify-center order-2 w-full my-4">
                 <img 
                   src="/diego-hero.png" 
                   alt="Diego Medina" 
-                  className="w-full max-w-[380px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.12)] -mb-1"
+                  className="w-full max-w-[280px] h-auto object-contain drop-shadow-xl -mb-4"
                 />
               </div>
               
@@ -105,10 +110,10 @@ export default function LandingPage() {
                 
                 {/* Mobile version of yellow highlight - Diffused/Blurred effect */}
                 <div className="absolute inset-0 bg-[#F7C34D]/80 lg:hidden z-0 rounded-[40px] blur-xl opacity-60"></div>
-                <div className="absolute inset-x-4 inset-y-1 bg-[#F7C34D]/90 lg:hidden z-0 rounded-2xl shadow-sm"></div>
+                <div className="absolute inset-x-2 inset-y-1 bg-[#F7C34D]/90 lg:hidden z-0 rounded-xl shadow-sm"></div>
                 
-                <p className="relative z-10 text-[16px] md:text-[24px] text-[#13253F] font-bold py-5 lg:py-3 px-10 lg:px-0 leading-relaxed text-center lg:text-left">
-                  Te ayudo a desarrollar un <span className="font-extrabold border-b-4 border-[#13253F]/20">liderazgo estratégico</span> que acelere tus resultados.
+                <p className="relative z-10 text-[#13253F] font-bold py-4 lg:py-3 px-6 lg:px-0 leading-relaxed text-center lg:text-left" style={{ fontSize: '16px' }}>
+                  Te ayudo a desarrollar un <span className="font-extrabold border-b-2 border-[#13253F]/20">liderazgo estratégico</span> que acelere tus resultados.
                 </p>
               </div>
             </div>
