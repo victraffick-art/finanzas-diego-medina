@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 /**
  * Main Landing Page Component
  * Includes Hero, About, Ebook, Testimonials and Social sections.
+ * Updated: 2026-05-11
  */
 export default function LandingPage() {
   return (
