@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import { useRouter } from "next/navigation";
 
 export default function DescargarEbook() {
+  const router = useRouter();
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -29,6 +31,9 @@ export default function DescargarEbook() {
       setIsSuccess(true);
       setNombre("");
       setCorreo("");
+      
+      // Redirigir a la página de agradecimiento
+      router.push("/gracias-ebook");
     } catch (err: any) {
       console.error("Error complete al guardar:", err);
       // Si hay un mensaje de error específico de Supabase, lo mostramos en consola para depuración
