@@ -176,36 +176,51 @@ export default function LandingPage() {
           <div className="absolute inset-0 bg-white/85"></div>
         </div>
 
-        <div className="container mx-auto max-w-6xl relative z-10 flex flex-col lg:flex-row h-full">
+        <div className="container mx-auto px-6 md:px-16 relative z-10 flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
-          {/* Spacer for Desktop Image */}
-          <div className="hidden lg:block lg:w-1/2"></div>
-
-          {/* Text Content */}
-          <div className="w-full lg:w-1/2 px-6 py-8 lg:py-10 relative z-10 lg:pl-16">
-            <h2 className="text-[#13253F] text-[28px] md:text-[38px] font-bold mb-4 tracking-tight">
+          {/* Title - Always top on mobile */}
+          <div className="block lg:hidden w-full text-center mb-4">
+            <h2 className="text-[32px] font-extrabold text-[#13253F] leading-tight">
               ¡Hola! Soy Diego Medina
             </h2>
-            
-            <div className="space-y-4 text-[#13253F] text-[16px] md:text-[18px] font-medium leading-relaxed opacity-90">
+          </div>
+
+          {/* Character Image - Order 2 on mobile, Right on desktop */}
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative w-full">
+            <div className="relative w-full max-w-[350px] lg:max-w-[500px] aspect-square lg:aspect-auto lg:h-[70vh] flex items-end">
+              <img 
+                src="/diego-sobre-mi.png" 
+                alt="Diego Medina" 
+                className="w-full h-full object-contain object-bottom drop-shadow-2xl z-10"
+              />
+            </div>
+          </div>
+
+          {/* Content - Order 3 on mobile, Left on desktop */}
+          <div className="order-2 lg:order-1 relative z-20 w-full">
+            {/* Title for Desktop */}
+            <h2 className="hidden lg:block text-[56px] font-extrabold text-[#13253F] leading-tight mb-8">
+              ¡Hola! Soy Diego Medina
+            </h2>
+            <div className="space-y-6 text-gray-700 text-base md:text-xl leading-relaxed max-w-xl text-justify lg:text-left">
               <p>
                 He dedicado gran parte de mi vida a intentar ser un líder más auténtico.
               </p>
               <p>
-                Soy coach, speaker y entrenador en liderazgo y desarrollo personal para el alto rendimiento, partner del Maxwell Leadership®.
+                Soy coach, speaker y entrenador de liderazgo y desarrollo personal para el alto rendimiento, partner del Leadership Circle Profile®.
               </p>
               <p>
-                Durante más de 27 años estuve vinculado al sector financiero gestionando equipos para impulsar el máximo desempeño, la rentabilidad y la experiencia de las personas.
+                Durante más de 27 años estuve en el sector financiero gestionando equipos para impactar la eficiencia, la rentabilidad y la experiencia de las personas.
               </p>
               <p>
-                Creo que el mundo necesita líderes más auténticos. No jefes carismáticos o motivados por el ego, sino líderes reales, que pueden integrar a la gente con el propósito común de hacer el mundo un lugar mejor para todos.
+                Creo que el mundo no necesita jefes carismáticos o motivados por el poder, sino líderes capaces de integrar a la gente con el propósito común de generar bienestar para todos.
               </p>
             </div>
           </div>
         </div>
 
         {/* Bottom Blue Band */}
-        <div className="w-full bg-[#1c2f42] relative z-20 overflow-hidden">
+        <div className="w-full bg-[#1c2f42] relative z-20 overflow-hidden mt-12">
           <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row">
             {/* Spacer for Desktop Image */}
             <div className="hidden lg:block lg:w-1/3 shrink-0"></div>
@@ -228,8 +243,8 @@ export default function LandingPage() {
           </div>
         </div>
 
-        {/* Absolute Image of Diego */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[95%] lg:h-[135%] z-30 pointer-events-none flex items-end px-6">
+        {/* Absolute Image of Diego - Hidden on Mobile */}
+        <div className="hidden lg:flex absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-[95%] lg:h-[135%] z-30 pointer-events-none items-end px-6">
           <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-end lg:translate-x-12">
             <img 
               src="/diego-about.png" 
