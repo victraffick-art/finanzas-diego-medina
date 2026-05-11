@@ -26,11 +26,11 @@ export default function LandingPage() {
         {/* Navigation Menu */}
         <nav className="hidden lg:flex items-center gap-10">
           {[
-            { label: "INICIO", href: "#inicio" },
-            { label: "SOBRE MÍ", href: "#sobre-mi" },
-            { label: "EVENTO", href: "#evento" },
-            { label: "EBOOK", href: "#ebook" },
-            { label: "RECURSOS", href: "#recursos" }
+            { label: "INICIO", href: "/#inicio" },
+            { label: "SOBRE MÍ", href: "/#sobre-mi" },
+            { label: "EVENTO", href: "/#evento" },
+            { label: "EBOOK", href: "/#ebook" },
+            { label: "RECURSOS", href: "/#recursos" }
           ].map((item) => (
             <Link
               key={item.label}
