@@ -24,13 +24,19 @@ export default function LandingPage() {
 
         {/* Navigation Menu */}
         <nav className="hidden lg:flex items-center gap-10">
-          {["SOBRE MÍ", "EVENTO", "WORKBOOK", "RECURSOS"].map((item) => (
+          {[
+            { label: "INICIO", href: "#inicio" },
+            { label: "SOBRE MÍ", href: "#sobre-mi" },
+            { label: "EVENTO", href: "#evento" },
+            { label: "EBOOK", href: "#ebook" },
+            { label: "RECURSOS", href: "#recursos" }
+          ].map((item) => (
             <Link
-              key={item}
-              href={`#${item.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/\\s+/g, "-")}`}
+              key={item.label}
+              href={item.href}
               className="text-[13px] font-bold tracking-widest hover:text-[#00AEEF] transition-colors"
             >
-              {item}
+              {item.label}
             </Link>
           ))}
         </nav>
@@ -44,7 +50,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[85vh] flex items-center overflow-hidden">
+      <section id="inicio" className="relative w-full min-h-[85vh] flex items-center overflow-hidden">
         {/* Background Image with Fixed Attachment (Parallax effect) */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed transition-all duration-700"
@@ -104,7 +110,7 @@ export default function LandingPage() {
       </section>
 
       {/* Mentalidad Estratégica Section */}
-      <section className="bg-[#13253F] py-12 md:py-16 px-6 text-center">
+      <section id="evento" className="bg-[#13253F] py-12 md:py-16 px-6 text-center">
         <div className="container mx-auto max-w-5xl">
           <p className="text-white text-[22px] md:text-[28px] font-bold mb-4 md:mb-6 tracking-tight">
             ¿Estás preparado para el siguiente nivel?
@@ -248,7 +254,9 @@ export default function LandingPage() {
       <Testimonials />
 
       {/* Social Media Section */}
-      <SocialSection />
+      <div id="recursos">
+        <SocialSection />
+      </div>
 
       {/* Footer */}
       <Footer />

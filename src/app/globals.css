@@ -4,8 +4,12 @@
   --font-sans: var(--font-sans);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  color-scheme: dark;
+  color-scheme: light dark;
 }
 
 body {
