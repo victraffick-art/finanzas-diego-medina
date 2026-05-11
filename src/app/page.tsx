@@ -226,7 +226,7 @@ export default function LandingPage() {
         </div>
 
         {/* Logos Auto-Scroll Banner */}
-        <div className="w-full bg-[#13253F] relative z-20 py-5 border-t-4 border-[#FCD144] overflow-hidden">
+        <div className="w-full bg-[#1C2F42] relative z-20 py-5 border-t-4 border-[#FCD144] overflow-hidden">
           <div className="flex items-center w-max animate-marquee">
             <img
               src="/logos-partners-blue.png"
