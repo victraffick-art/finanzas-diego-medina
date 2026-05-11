@@ -22,16 +22,18 @@ export default function DescargarEbook() {
         .insert([{ nombre, correo, ebook: "Rompe Tus Limites" }]);
 
       if (supabaseError) {
+        console.error("Supabase Error Details:", supabaseError);
         throw supabaseError;
       }
 
       setIsSuccess(true);
       setNombre("");
       setCorreo("");
-      // Opcional: Aquí podrías redirigir a un PDF o mostrar el enlace de descarga
     } catch (err: any) {
-      console.error("Error al guardar:", err);
-      setError("Hubo un error al procesar tu solicitud. Por favor, intenta de nuevo.");
+      console.error("Error complete al guardar:", err);
+      // Si hay un mensaje de error específico de Supabase, lo mostramos en consola para depuración
+      const errorMessage = err.message || "Error desconocido";
+      setError(`Hubo un error al procesar tu solicitud: ${errorMessage}. Por favor, intenta de nuevo.`);
     } finally {
       setIsLoading(false);
     }
