@@ -231,15 +231,16 @@ export default function LandingPage() {
             <img
               src="/logos-partners-blue.png"
               alt="Partners: Maxwell Leadership, IEPP, LASALLE, Coaching Hall"
-              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16 brightness-0 invert"
+              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16"
             />
             <img
               src="/logos-partners-blue.png"
               alt="Partners: Maxwell Leadership, IEPP, LASALLE, Coaching Hall"
-              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16 brightness-0 invert"
+              className="h-12 md:h-16 w-auto object-contain opacity-90 px-16"
             />
           </div>
         </div>
+
 
       </section>
 
