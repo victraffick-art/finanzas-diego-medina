@@ -49,42 +49,50 @@ export default function SocialSection() {
       />
       <div className="absolute inset-0 z-10 bg-white/40 backdrop-blur-sm" />
 
-      <div className="container mx-auto px-6 max-w-5xl relative z-20">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
+      <div className="container mx-auto px-6 max-w-5xl relative z-20 py-12 md:py-20">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
           
-          {/* Text and Icons */}
-          <div className="flex-1 py-12 md:py-20 text-center">
-            <h2 className="text-[#13253F] text-2xl md:text-3xl font-bold mb-6 leading-tight max-w-xl mx-auto">
+          {/* 1. Title - Only top on mobile */}
+          <div className="w-full lg:hidden text-center mb-4">
+            <h2 className="text-[#13253F] text-2xl font-extrabold leading-tight">
               Ideas, inspiración y estrategias para el desarrollo de tu liderazgo
             </h2>
-            <p className="text-[#3a4856] text-sm md:text-base mb-8 max-w-xl mx-auto opacity-90">
+          </div>
+
+          {/* 2. Image - Order 1 on mobile, Right on desktop */}
+          <div className="order-1 lg:order-2 flex-1 flex justify-center items-end">
+            <img 
+              src="/diego-books.png" 
+              alt="Diego Medina con libros" 
+              className="relative z-30 w-full max-w-[280px] md:max-w-md lg:max-w-lg object-contain drop-shadow-xl"
+            />
+          </div>
+
+          {/* 3. Text and 4. Icons - Order 2 on mobile, Left on desktop */}
+          <div className="order-2 lg:order-1 flex-1 text-center lg:text-left">
+            {/* Title for Desktop */}
+            <h2 className="hidden lg:block text-[#13253F] text-[42px] font-extrabold mb-6 leading-tight">
+              Ideas, inspiración y estrategias para el desarrollo de tu liderazgo
+            </h2>
+            <p className="text-[#3a4856] text-base md:text-lg mb-8 opacity-90 text-justify lg:text-left">
               Suscríbete a mis redes sociales, activa las notificaciones y disfruta de toda la información poderosa y práctica que puedes aplicar de inmediato en tu vida:
             </p>
 
-            {/* Social Icons */}
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {/* Social Icons - One line on Mobile */}
+            <div className="flex flex-row flex-nowrap items-center justify-center lg:justify-start gap-4 md:gap-6">
               {socialLinks.map((item, index) => (
                 <a
                   key={index}
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-14 h-14 md:w-20 md:h-20 border-2 md:border-[3px] border-[#13253F] rounded-full flex items-center justify-center text-[#13253F] hover:bg-[#13253F] hover:text-white transition-all duration-300"
+                  className="w-12 h-12 md:w-16 md:h-16 border-2 border-[#13253F] rounded-full flex items-center justify-center text-[#13253F] hover:bg-[#13253F] hover:text-white transition-all duration-300 shrink-0"
                   aria-label={item.label}
                 >
-                  <item.icon className="w-7 h-7 md:w-10 md:h-10" />
+                  <item.icon className="w-6 h-6 md:w-8 md:h-8" />
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Diego Image */}
-          <div className="relative flex-1 flex justify-center items-end pt-8 md:pt-0">
-            <img 
-              src="/diego-books.png" 
-              alt="Diego Medina con libros" 
-              className="relative z-30 w-full max-w-md md:max-w-lg object-contain"
-            />
           </div>
 
         </div>

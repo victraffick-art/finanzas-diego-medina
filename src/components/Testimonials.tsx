@@ -106,28 +106,30 @@ export default function Testimonials() {
         </button>
 
         {/* Testimonial Content */}
+        {/* Testimonial Content */}
         <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-6 md:gap-10 transition-opacity duration-500 px-4 md:px-16" style={{ opacity: isAnimating ? 0 : 1 }}>
           
-          {/* Avatar */}
-          <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 rounded-full overflow-hidden">
+          {/* Avatar - Top on mobile */}
+          <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 rounded-full overflow-hidden shadow-lg border-4 border-white">
             <img 
               src={currentTestimonial.image} 
               alt={currentTestimonial.name}
               className="w-full h-full object-cover"
               onError={(e) => {
-                // Fallback si no hay imagen aún
                 e.currentTarget.src = 'https://ui-avatars.com/api/?name=' + currentTestimonial.name + '&background=0771B8&color=fff&size=256';
               }}
             />
           </div>
 
-          {/* Text */}
+          {/* Text - Below on mobile */}
           <div className="flex flex-col text-center md:text-left">
-            <h4 className="text-[#13253F] text-sm md:text-base mb-2">
-              <span className="font-extrabold">{currentTestimonial.name}</span> | <span className="font-normal">{currentTestimonial.role}</span> | <span className="font-extrabold">{currentTestimonial.country}</span>
+            <h4 className="text-[#13253F] text-sm md:text-base mb-3">
+              <span className="font-extrabold">{currentTestimonial.name}</span> <span className="hidden md:inline">|</span> <br className="md:hidden" />
+              <span className="font-normal text-xs md:text-base">{currentTestimonial.role}</span> <span className="hidden md:inline">|</span> <br className="md:hidden" />
+              <span className="font-extrabold">{currentTestimonial.country}</span>
             </h4>
             
-            <div className="text-[#3a4856] text-xs md:text-sm leading-relaxed opacity-90 whitespace-pre-wrap">
+            <div className="text-[#3a4856] text-[13px] md:text-sm leading-relaxed opacity-90 whitespace-pre-wrap">
               {currentTestimonial.text}
             </div>
           </div>
