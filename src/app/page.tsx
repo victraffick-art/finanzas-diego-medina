@@ -77,10 +77,10 @@ export default function LandingPage() {
           {/* Text Content - Title is order-1 on mobile, P is order-3 */}
           <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full">
             <div className="max-w-3xl flex flex-col items-center">
-              <h1 className="text-[#13253F] leading-[1.1] tracking-tight mb-4 lg:mb-12 text-center lg:text-left order-1 px-2">
-                <span className="block font-extrabold text-[26px] md:text-[56px] lg:text-[76px]">Transforma tu liderazgo</span>
-                <span className="block font-light text-[22px] md:text-[52px] lg:text-[64px] -mt-1">y alcanza resultados</span>
-                <span className="block font-light text-[22px] md:text-[52px] lg:text-[64px] -mt-1">exponenciales</span>
+              <h1 className="text-[#13253F] leading-[1.1] tracking-tight mb-2 lg:mb-12 text-center lg:text-left order-1 px-2">
+                <span className="block font-extrabold !text-2xl md:!text-5xl lg:!text-7xl">Transforma tu liderazgo</span>
+                <span className="block font-light !text-xl md:!text-4xl lg:!text-6xl -mt-1">y alcanza resultados</span>
+                <span className="block font-light !text-xl md:!text-4xl lg:!text-6xl -mt-1">exponenciales</span>
               </h1>
               
               {/* Image for Mobile Only - Order 2 */}
