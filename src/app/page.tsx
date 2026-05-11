@@ -68,19 +68,19 @@ export default function LandingPage() {
           
           {/* Text Content - Title is order-1 on mobile, P is order-3 */}
           <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full">
-            <div className="max-w-3xl">
-              <h1 className="text-[#13253F] leading-[1.05] tracking-tight mb-8 lg:mb-12 text-center lg:text-left order-1">
-                <span className="block font-extrabold text-[40px] md:text-[56px] lg:text-[76px]">Transforma tu liderazgo</span>
-                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">y alcanza resultados</span>
-                <span className="block font-light text-[36px] md:text-[52px] lg:text-[64px] -mt-2">exponenciales</span>
+            <div className="max-w-3xl flex flex-col items-center">
+              <h1 className="text-[#13253F] leading-[1.05] tracking-tight mb-6 lg:mb-12 text-center lg:text-left order-1">
+                <span className="block font-extrabold text-[32px] md:text-[56px] lg:text-[76px]">Transforma tu liderazgo</span>
+                <span className="block font-light text-[28px] md:text-[52px] lg:text-[64px] -mt-1">y alcanza resultados</span>
+                <span className="block font-light text-[28px] md:text-[52px] lg:text-[64px] -mt-1">exponenciales</span>
               </h1>
               
               {/* Image for Mobile Only - Order 2 */}
-              <div className="lg:hidden flex justify-center mb-10 order-2">
+              <div className="lg:hidden flex justify-center order-2 w-full">
                 <img 
                   src="/diego-hero.png" 
                   alt="Diego Medina" 
-                  className="w-full max-w-[300px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.12)]"
+                  className="w-full max-w-[420px] h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.12)] -mb-2"
                 />
               </div>
               
@@ -88,10 +88,10 @@ export default function LandingPage() {
                 {/* Yellow Highlight Bar */}
                 <div className="absolute inset-y-0 -left-6 -right-12 bg-gradient-to-r from-[#F7C34D]/70 via-[#F7C34D]/50 to-transparent z-0 transform -skew-x-12 rounded-l-md hidden lg:block"></div>
                 {/* Mobile version of yellow highlight - simpler and centered */}
-                <div className="absolute inset-0 bg-[#F7C34D]/30 lg:hidden z-0 rounded-xl"></div>
+                <div className="absolute inset-0 bg-[#F7C34D]/90 lg:hidden z-0 rounded-2xl shadow-lg"></div>
                 
-                <p className="relative z-10 text-[18px] md:text-[24px] text-[#13253F] font-medium py-4 lg:py-3 px-6 lg:px-0 leading-relaxed text-center lg:text-left">
-                  Te ayudo a desarrollar un <span className="font-bold border-b-4 border-[#13253F]/10">liderazgo estratégico</span> que acelere tus resultados.
+                <p className="relative z-10 text-[18px] md:text-[24px] text-[#13253F] font-bold py-5 lg:py-3 px-8 lg:px-0 leading-relaxed text-center lg:text-left">
+                  Te ayudo a desarrollar un <span className="font-extrabold border-b-4 border-[#13253F]/20">liderazgo estratégico</span> que acelere tus resultados.
                 </p>
               </div>
             </div>
