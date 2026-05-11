@@ -90,9 +90,9 @@ export default function LandingPage() {
           <div className="lg:col-span-7 lg:order-2 flex flex-col justify-center relative z-30 w-full mt-2 lg:mt-0">
             <div className="max-w-3xl flex flex-col items-center lg:items-start">
               <h1 className="text-[#13253F] tracking-tight mb-4 lg:mb-12 text-center lg:text-left order-1">
-                <span className="block font-extrabold" style={{ fontSize: 'min(28px, 7vw)', lineHeight: '1.2' }}>Transforma tu liderazgo</span>
-                <span className="block font-light -mt-1" style={{ fontSize: 'min(24px, 6vw)', lineHeight: '1.2' }}>y alcanza resultados</span>
-                <span className="block font-light -mt-1" style={{ fontSize: 'min(24px, 6vw)', lineHeight: '1.2' }}>exponenciales</span>
+                <span className="block font-extrabold" style={{ fontSize: 'min(28px, 8vw)', lineHeight: '1.4', marginBottom: '4px' }}>Transforma tu liderazgo</span>
+                <span className="block font-light" style={{ fontSize: 'min(24px, 7vw)', lineHeight: '1.4' }}>y alcanza resultados</span>
+                <span className="block font-light" style={{ fontSize: 'min(24px, 7vw)', lineHeight: '1.4' }}>exponenciales</span>
               </h1>
               
               {/* Image for Mobile Only - Order 2 */}
