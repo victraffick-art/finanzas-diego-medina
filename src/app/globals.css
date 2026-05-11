@@ -57,3 +57,33 @@ body {
 .animate-fade-in-up {
   animation: fadeInUp 1s ease-out forwards;
 }
+
+/* Hard fix for mobile title sizes */
+.hero-title-mobile {
+  font-size: 28px !important;
+  line-height: 1.1 !important;
+}
+
+.hero-subtitle-mobile {
+  font-size: 24px !important;
+  line-height: 1.1 !important;
+}
+
+@media (min-width: 768px) {
+  .hero-title-mobile {
+    font-size: 56px !important;
+  }
+  .hero-subtitle-mobile {
+    font-size: 52px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title-mobile {
+    font-size: 76px !important;
+  }
+  .hero-subtitle-mobile {
+    font-size: 64px !important;
+  }
+}
+
