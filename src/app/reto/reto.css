@@ -1,0 +1,171 @@
+/* Reto 7 Días - Premium Landing Page Styles */
+
+:root {
+  --primary-dark: #13253F;
+  --accent-cyan: #00AEEF;
+  --accent-gold: #F7C34D;
+  --text-white: #FFFFFF;
+  --text-muted: #CBD5E0;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+.reto-body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-white);
+  background-color: var(--primary-dark);
+  overflow-x: hidden;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-gold {
+  0% { box-shadow: 0 0 0 0 rgba(247, 195, 77, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(247, 195, 77, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(247, 195, 77, 0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Sections */
+.section-padding {
+  padding: 100px 20px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 20px;
+  }
+}
+
+/* Hero Section */
+.hero-gradient {
+  background: radial-gradient(circle at center, #1a3a5f 0%, #13253f 100%);
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('/financial_workshop_hero_bg_1778694681775.png') center/cover no-repeat;
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--accent-cyan);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+}
+
+/* Typography */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #F7C34D 0%, #FCD144 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00AEEF 0%, #00d2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Buttons */
+.cta-button {
+  background: linear-gradient(135deg, #F7C34D 0%, #FCD144 100%);
+  color: var(--primary-dark);
+  font-weight: 800;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(247, 195, 77, 0.3);
+  animation: pulse-gold 2s infinite;
+}
+
+.cta-button:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 15px 30px rgba(247, 195, 77, 0.4);
+}
+
+/* Icons and Bullets */
+.check-icon {
+  color: #48BB78;
+  flex-shrink: 0;
+}
+
+.method-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.step-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* Pricing Table */
+.pricing-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--accent-gold);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  background: var(--accent-gold);
+  color: var(--primary-dark);
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-weight: 800;
+  font-size: 12px;
+}
+
+/* Footer */
+.reto-footer {
+  border-top: 1px solid var(--glass-border);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
